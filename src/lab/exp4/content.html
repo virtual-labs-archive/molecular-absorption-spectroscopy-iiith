@@ -1,0 +1,589 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+
+<!-- The lab Header contains the logo and the name of the lab, 
+	usually displayed on the top of the page-->
+
+	<header id="lab-header">
+
+	<div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+	<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+	<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+
+	<map name="logos">
+
+	<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+	<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+
+	<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+	</map>
+
+	</div>
+
+	</a>
+	</div>
+
+	<div id="lab-header-heading" class="heading">
+	<!-- Write the name of your lab and link it to the home page
+	of your lab. -->
+	<a href="../index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+	</div>
+
+	<!-- Add any additional element or link you want to add to 
+	the lab header, For example : Help (Enclosing them with 
+			suitable div is recommended)-->
+
+	</header>
+
+
+	<!-- The lab article is the main content area where all the 
+	experiment content sits-->
+	<article id="lab-article">
+
+
+	<!-- The lab article has an header, optional navigational 
+	menu, number of sections, an optional sidebar and a closing 
+	footer-->
+	<header id="lab-article-header">
+
+	<!-- You can add a welcome message or title of the 
+	experiment enclosed in h1 tag here -->
+	<div id="lab-article-heading" class="heading">
+Sample Concentration Dependence of Absorbance (Beer Law)
+	</div>
+
+	<!-- Add any additional element if required with proper 
+	enclosing-->
+	</header>
+
+
+	<!-- Navigation menu is useful to organize the view of 
+	multiple sections inside the article-->
+	<nav id="lab-article-navigation">
+	<ul id="lab-article-navigation-menu">
+	<!-- The menu will be dynamically generated to contain the 
+	headings of your sections or instead write the menu items 
+	of your choice individually enclosed in <li> tag as shown 
+	below-->
+	</ul>
+	</nav>
+
+
+	<!-- All the sections of your lab or experiment can be 
+	enclosed together with a div element as shown below-->
+	<div id="lab-article-sections">
+
+	<!-- First section of the article-->
+	<section id="lab-article-section-1">
+	<div id="lab-article-section-1-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/introduction.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	<p align="justify">
+	Have you noted that the color intensity of a colored substance (say, an indicator dye) decreases with the increase in dilution? This is because the magnitude of light absorbed depends on the quantity of light absorbing substance present in a sample, in addition to the sample path length. For a light absorbing substance present in solution, the light attenuation depends on the concentration of the substance. We know that many organic molecules do not absorb electromagnetic radiation in the ultraviolet-visible (UV-VIS) regions (~wavelengths range 190 nm - 800 nm). Absorption spectroscopy is, therefore, of limited utility in this range of wavelengths. However, a number of chemical analysis can be done in the case of light absorbing organic molecules. The quantity of a colored substance present in a solution can be determined if the relation between the sample concentration and the light absorption is known. German scientist August Beer formulated a relationship in this regard in 1852, which is known as Beer Law. This law is the basis for quantitative UV-visible measurements.
+	</p>
+
+	</div>
+
+	</section>
+
+
+	<!-- Second section of the article-->
+	<section id="lab-article-section-2">
+
+	<div id="lab-article-section-2-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/objective.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	Objective
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-2-content" class="content">
+	<p align="JUSTIFY">
+	To understand and determine the relationship between the concentration and absorbance of a given sample 
+	</p>
+	</div>
+
+	</section>
+
+
+	<!-- Second section of the article-->
+	<section id="lab-article-section-3">
+
+	<div id="lab-article-section-3-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/theory.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	Theory
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-3-content" class="content">
+	<p align="justify">
+	Beer Law states that the light absorbing capacity of a dissolved substance is directly proportional to its concentration in the solution. Mathematically this law is given by 
+	</p>
+	<p>
+	\begin{equation}
+	A = - log_{10} T = &#949;_&#955;.l.c
+	\end{equation}
+	</p>
+	<p>
+	A is the absorbance and T is the transmittance (= I/I<sub>0</sub>, where intensity of incident beam is Io and the intensity of the emergent beam is I). ε<sub>λ</sub>, which is a property of the substance and the solvent at a particular wavelength λ, is known as the molar absorptivity or extinction coefficient of the dissolved colored substance. ℓ is the sample path length and c is the concentration of the substance in the sample.
+	</p><p>
+	Therefore, A = (constant)× c for a given path length of a sample. </p>
+	<p>
+	One can verify validity of Beer Law by using a spectrophotometer and preparing a few different concentrations of solutions of a light absorbing substance in a suitable solvent. If one plots A vs. c for a sample of a given path length, then a straight line passing through origin and slope = (ελ. ℓ) should be obtained. It should be noted here that often deviations from the linearity occur at higher concentrations of the analyte in a solvent. Nevertheless, Beer Law is accurate for a range of low concentrations of chromophores in many solvents and is therefore widely used in quantitative spectroscopy. If the molar absorptivity or extinction coefficient is known for particular substance, the unknown concentration of that substance in a solution can be calculated from the above equation. In the case of nonavailability of molar absorptivity or extinction coefficient, the unknown analyte concentration can be determined using a "calibration" straight line (or the regression equation for the straight line) derived by plotting the absorbance vs. concentration from a few standard solutions.
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-4">
+
+	<div id="lab-article-section-4-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/procedure.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	Procedure
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-4-content" class="content">
+	<p>
+	To understand the relationship between the concentration and absorbance of a given sample, click on the first Simulator. 
+	To determine the relationship between the concentration and absorbance of a given sample, click on the second Simulator and proceed as follows.
+	</p>
+	<p>
+	<ol>
+	<li>
+	Turn on the instrument by clicking on the power button and wait for 30 min for initialization of the instrument.
+	</li><li>
+Prepare three aqueous solutions of appropriate concentrations (say, 0.1 mM, 0.5 mM and 1.0 mM) of potassium permanganate. In this virtual lab experiment, click and drag on the concentration bar to select the solution for measurement. Begin with the lowest concentration solution. (Why?)
+	</li><li>
+	Click on the beaker to take a clean, dry beaker.
+	</li><li>
+	Click on the volumetric flask to pour the solution into the clean, dry beaker.
+	</li><li>
+	Click on the micropipette to collect appropriate quantity of solution from the beaker.
+	</li><li>
+	Take a cuvette by clicking on it.
+	</li><li>
+Pour the solution from the micropipette into the cuvette by clicking on the cuvette. (In real measurements, the cuvette is filled to about two-third of its volume.)
+	</li><li>
+	Click on the spectrophotometer lid to open it.
+	</li><li>
+	Click on the cuvette to place it in the sample holder. One has to use water as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown. In this case, one can place the sample in the sample holder and the sample bank or reference in the reference holder simultaneously.
+	</li><li>
+	Run the wavelength scan by clicking on the Computer monitor and then on the Scan button and observe the wavelength scan. In the real spectrophotometer operation, an appropriate wavelength range of incident light for the sample can be chosen and the wavelength scan are run via the accompanied computer software. One can run the scan in absorbance or transmittance mode. The scan data is stored in the computer with a file name. If the spectrophotometer is a single beam instrument, then first the sample blank or reference is taken in a cuvette and the wavelength scan is run followed by the sample. One has to subtract the reference data from the sample data for respective wavelengths.
+	</li><li>
+	Click on Reset button to start new measurement. 
+	</li><li>
+	Repeat the measurement with next higher concentration and so on.
+	</li><li>
+	Collect all data by clicking on the Data tab.
+	</li><li>
+	Plot the absorbance data of the sample at various wavelengths for different concentrations and determine the wavelength of maximum absorptions i.e., spectral peak-positions. 
+	</li><li>
+	Plot the absorbance values for a particular wavelength (say, 525 nm) vs. concentration and calculate linear regression. 
+	</li><li>
+	Repeat the plotting of the absorbance values vs. concentration for two other wavelengths say, 545 nm and 570 nm and calculate linear regressions.
+	</li><li>
+	Construct similar three plots taking transmittance in place of absorbance values vs. concentration for the above three wavelengths and calculate linear regressions.
+	</li><li>
+	Verify the Beer Law observing whether absorbance and transmittance values have linear correlation with concentration or not.
+	</li><li>
+	Normalize absorbance measurements to 1 mM concentration by dividing the absorbance data by the corresponding concentration for a given wavelength. Are the normalized data (within experimental error) concentration -specific at a given wavelength? Discuss your results. 
+	</li>
+	</ol>
+	</p>
+	<p>
+	<b>Table 1.</b> Measured Absorbance and Transmittance values at different concentrations for different wavelengths
+	</p>
+	<p>
+	<TABLE WIDTH=617 CELLPADDING=1 CELLSPACING=0>
+	<COL WIDTH=86>
+	<COL WIDTH=74>
+	<COL WIDTH=9>
+	<COL WIDTH=86>
+	<COL WIDTH=4>
+	<COL WIDTH=65>
+	<COL WIDTH=104>
+	<COL WIDTH=65>
+	<COL WIDTH=103>
+	<TR VALIGN=TOP>
+	<TD ROWSPAN=3 WIDTH=96 HEIGHT=25 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR><BR>
+	</P>
+	<P CLASS="western" ALIGN=CENTER><BR><BR>
+	</P>
+	<P CLASS="western" ALIGN=LEFT>Wavelengths        
+	</P>
+	</TD>
+	<TD COLSPAN=8 WIDTH=526 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #00000a; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>Concentrations and
+	Absorbance-Transmittance Values 
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD COLSPAN=3 WIDTH=96 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #00000a; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>1.0 mM</P>
+	</TD>
+	<TD WIDTH=86 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #00000a; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>.5 mM</P>
+	</TD>
+	<TD COLSPAN=4 WIDTH=350 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #00000a; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>0.1 mM</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Abs</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Transmittance</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #00000a; border-right: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Abs</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Transmittance</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #00000a; border-right: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Abs</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Transmittance</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=86 HEIGHT=12 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>525 nm</P>
+	</TD>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=86 HEIGHT=12 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>545 nm</P>
+	</TD>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=86 HEIGHT=11 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>570 nm</P>
+	</TD>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	</TR>
+	</TABLE>
+	</p>
+
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-5">
+
+	<div id="lab-article-section-5-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/experiment.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-5-heading" class="heading">
+	Simulator
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-5-content" class="content">
+	<p>
+	<a href="./media/concentration.html" target="_blank">Click here to find out the effect of sample concentration</a><br>
+	<a href="./media/4.html" target="_blank">Click here to go to lab</a>
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-6">
+
+	<div id="lab-article-section-6-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/quiz.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-6-heading" class="heading">
+	Quiz
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-6-content" class="content">
+	<h3>
+	Pre-Experiment
+	</h3>
+
+	<ol align="justify">
+	<li>
+	If all the light passes through a solution without any absorption, then what are the values of absorbance and percent transmittance?
+	</li><li>
+	If all the light is absorbed, then what are the values of absorbance and percent transmittance?
+	</li><li>
+	If A = 2.00, then what are the % of the photons absorbed and reach the detector?
+	</li><li>
+	“The optical absorbance of a chromophore in a transparent solvent varies linearly with both the sample path length and the chromophore concentration.” Is the statement true or false?
+	</li><li>
+	What is the absorbance value when the absorption cross-section of a molecule is zero?
+	</li>
+	</ol>
+
+	<h3>
+	Post-Experiment
+	</h3>
+
+	<ol align="justify">
+	<li>
+	“A dilute solution of a chromophore can absorb more light than that its concentrated solution.” Justify the statement.
+	</li><li>
+	Is the absorbance vs. concentration plot linear for any concentration range of a substance?
+	</li><li>
+	Which data appears convenient to handle for quantitative analysis - absorbance data or transmittance data- and why?
+	</li><li>
+	What is the necessity of constructing more than one plot of absorbance vs. concentration for more than one wavelength?
+	</li>
+	</ol>
+
+
+
+	</div>
+
+	</section>
+	<section id="lab-article-section-7">
+
+	<div id="lab-article-section-7-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img id="feedback" src="../images/references.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-7-heading" class="heading">
+	References
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-7-content" class="content">
+	<ol align="justify">
+	<li>
+	“Chemical Analysis: Modern Instrumentation Methods and Techniques” by F. Rouessac and A. Rouessac, Second Edition, John Wiley & Sons Ltd (2007).
+	</li><li>
+	“Across the Spectrum: Instrumentation for UV/Vis Spectrophotometry” by S. Beck, The Scientist 12[3]:20, Feb. 02, 1998.
+	</li><li>
+	“Physical Chemistry” by P. Atkins and J. De Paula, Publisher: W. H. Freeman & Company (Dec 2009).
+	</li><li>
+	“Absorption and fluorescent properties of fluorescein” by R. Sjöback, J. Nygren and M. Kubista in journal “Spectrochimica Acta Part A 51 (1995) L7 – L21.”
+	</li><li>
+	“Handbook of Instrumental Techniques for Analytical Chemistry” by F. A. Settle (Editor), Pearson Education Limited (2004). 
+	</li><li>
+	“Modern Analytical Chemistry” by D. Harvey, McGraw-Hill Education (2000). 
+	</li><li>
+	“Fundamentals of modern UV-visible spectroscopy”, Publication Number 5980-1397E, a primer from Agilent Technologies (2000). 
+	</li><li>
+	“Fundamentals of UV-visible spectroscopy: Workbook”, Publication Number 5980-1398E, a primer from Agilent Technologies (2000).  
+	</li>
+	</ol>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-99">
+
+	<div id="lab-article-section-99-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-99-heading" class="heading">
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-99-content" class="content">
+	</div>
+	</section>
+
+	<section id="lab-article-section-100">
+
+	<div id="lab-article-section-100-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-100-heading" class="heading">
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-100-content" class="content">
+	</div>
+	</section>
+
+
+	</div>	
+
+	<!-- An article can have a sidebar that contain related 
+	links and additional material (it is optional at this 
+			moment)-->
+	<aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+	sidebar-->	
+	</aside>
+
+	<!-- Article footer can display related content and 
+	additional links -->						
+	<footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+	</footer>
+
+	</article>
+
+	<!-- Links to other labs, about us page can be kept the lab 
+	footer-->
+	<footer id="lab-footer" class="default">
+	<!-- Put the content here-->
+	</footer>
+
+	</div>
+	</body>
+	</html>

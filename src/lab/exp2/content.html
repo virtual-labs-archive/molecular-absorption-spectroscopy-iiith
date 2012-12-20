@@ -1,0 +1,679 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+
+<!-- The lab Header contains the logo and the name of the lab, 
+	usually displayed on the top of the page-->
+
+	<header id="lab-header">
+
+	<div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+	<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+	<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+
+	<map name="logos">
+
+	<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+	<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+
+	<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+	</map>
+
+	</div>
+
+	</a>
+	</div>
+
+	<div id="lab-header-heading" class="heading">
+	<!-- Write the name of your lab and link it to the home page
+	of your lab. -->
+	<a href="../index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+	</div>
+
+	<!-- Add any additional element or link you want to add to 
+	the lab header, For example : Help (Enclosing them with 
+			suitable div is recommended)-->
+
+	</header>
+
+
+	<!-- The lab article is the main content area where all the 
+	experiment content sits-->
+	<article id="lab-article">
+
+
+	<!-- The lab article has an header, optional navigational 
+	menu, number of sections, an optional sidebar and a closing 
+	footer-->
+	<header id="lab-article-header">
+
+	<!-- You can add a welcome message or title of the 
+	experiment enclosed in h1 tag here -->
+	<div id="lab-article-heading" class="heading">
+	Solvent Effects on the UV-visible Absorption Spectra
+	</div>
+
+	<!-- Add any additional element if required with proper 
+	enclosing-->
+	</header>
+
+
+	<!-- Navigation menu is useful to organize the view of 
+	multiple sections inside the article-->
+	<nav id="lab-article-navigation">
+	<ul id="lab-article-navigation-menu">
+	<!-- The menu will be dynamically generated to contain the 
+	headings of your sections or instead write the menu items 
+	of your choice individually enclosed in <li> tag as shown 
+	below-->
+	</ul>
+	</nav>
+
+
+	<!-- All the sections of your lab or experiment can be 
+	enclosed together with a div element as shown below-->
+	<div id="lab-article-sections">
+
+	<!-- First section of the article-->
+	<section id="lab-article-section-1">
+	<div id="lab-article-section-1-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/introduction.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	<p align="justify">
+	Spectrophotometric measurements can be carried out in gaseous, liquid or solution as well as solid state of a light absorbing analyte. Majority of UV-visible spectrophotometric measurements require the analyte(s) to be dissolved in an appropriate solvent. Water and many organic solvents such as ethanol, acetonitrile, cyclohexane, dimethylformamide (DMF), dimethylsulfoxide (DMSO), etc. are used for this purpose. Solventsshould dissolve the sample well, be optically transparent (not absorb incident radiation), and chemically inert and pure.Although solvents should be, in principle, optically transparent, most of the solvents absorb significant amount of light especially in the UV regions of electromagnetic spectrum. Therefore, one should choose a solvent that allows optimal transmission of the light in the wavelength range of interest. Further, any finite absorption of light by the solvent in the wavelength range of interest should be subtracted as a blank or reference spectrum from the analyte spectrum.
+	</p>
+	<p>
+	It has been observed that the positions, intensities and shapes of the absorption spectral bands of light absorbing molecules depend on the nature of the solvent and often on the solvent polarity. Based on polarity scales, solvents are classified as polar and nonpolar solvents. Water, ethanol, acetonitrile, diethyl ether, etc. are a few examples of polar solvents. On the other hand, carbon tetrachloride, nhexane, cyclohexane, benzene, dioxane, etc. are a few examples of nonpolar solvents. Polar solvents like water and alcohol tend to obliterate the fine spectral details of the absorbing species unlike nonpolar ones. Therefore, a nonpolar solvent like n-hexane should be used where the fine spectral details are required as in the case of qualitative analysis.
+	</p>
+	</div>
+
+	</section>
+
+
+	<!-- Second section of the article-->
+	<section id="lab-article-section-2">
+
+	<div id="lab-article-section-2-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/objective.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	Objective
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-2-content" class="content">
+	<p>
+	To study the effects of solvents on the UV-visible absorption spectra of a molecule.
+	</p>
+	</div>
+
+	</section>
+
+
+	<!-- Second section of the article-->
+	<section id="lab-article-section-3">
+
+	<div id="lab-article-section-3-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/theory.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	Theory
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-3-content" class="content">
+	<p align="justify">
+	Solvent effects are sum of the bulk solvent properties like polarity, dielectric property, dispersive-induction-polarization interactions, viscosities and/or specific solute-solvent interactions. In the absence of inter-molecular hydrogen bond, the spectral shifts are mainly sensitive to the solvent polarity. Solvent-solute interactions in the cases of non-polar solvents like saturated hydrocarbons are negligible. Therefore, the absorption spectrum of a solute molecule in these nonpolar solvents shows fine spectral details similar to that in pure gaseous state.
+	</p>
+	<p>
+	We know that the electronic transitions modify the charge distribution of the absorbing molecule. Therefore, depending on the solvent polarity and kind of transition, solvent-solute interactions vary which in turn determine the energies of the ground and excited states of the light absorbing molecule. This affects both the peak position (λ<sub>max</sub>) and absorptivity (ε) of the absorbing molecule. The absorptivity, a characteristic of the absorbing substance, is a useful quantity that gives us idea about the transition probabilities in the molecules and the effective light capture area (the cross-section for light absorption) of the species. If the chromophore involved in the transition is more polar in its ground state than in its excited state, then the ground state is more stabilized than the excited state by a more polar solvent due to solvation. Chromophores with n→π<sup>*</sup> or n→σ<sup>*</sup> transitions exhibit such behavior. The solvent molecules are oriented around the solute (chromophore) molecules to fit with the ground state charge distribution of the solute molecules. Hydrogen bonding or polar solvents interact more strongly with unshared electron pairs of the ground state molecule. On excitation, the charge distribution in such systems changes markedly and therefore, the solvent molecules would not have position and orientation to interact with the excited state charge distribution. Thus, the ground state of such solute molecules are more stabilized than the excited state. This widens the energy gap between the ground and excited states with increasing polarity of the solvents (Figure 1). Therefore, more energy is required for the n→π*kind of electronic transition with increasing solvent polarity. This results in the shift of spectral peak positions towards shorter wavelength. On the other hand, if the excited state of the chromophore is more polar with respect to the ground state, then the excited state will be more solvated and more stabilized by a more polar solvent. This kind of property is observed in the case chromophores with π →π* transitions. The π electron density is equally distributed in the ground state and the C nuclei are shielded whereas in the π* excited state the C nuclei become electron deficient due to the electron promotion. This favors stronger interaction of the excited state molecule with more polar or hydrogen bonding solventsand thereby stabilizing the excited state more than the ground state. This decreases the energy gap between the excited and the ground states with increasing solvent polarity (Figure 1) which results in shift of absorption peak positions towards longer wavelengths. We may recall that a shift of the absorption peak position (λ<sub>max</sub>) towards shorter wavelengths is called a blue shift or hypsochromic effect. On the other hand, a shift of the λ<sub>max</sub> towards longer wavelength is termed as the red shift or bathochromic effect. When there is an increase in the absorption intensity,(i.e., absorbance) the effect is termed as hyperchromic effect. If there is a decrease in the absorption intensity, the effect is termed as hyporchromic effect.
+
+	</p>
+<p>
+<img src="images/2_1.png" alt="EXP2_1" style="height:600px" />
+</p>
+<p align="center">
+<b>Figure1:</b> Effect of solvent polarity on n→π* and  π →π* transitions.
+</p>
+	<p>
+	The solvent dependent spectral shifts that originate from the interaction between the chromophore and the entire set of surrounding solvent molecules and do not involve any chemical interactions or specific solvent-chromophore interactions are referred to as “general solvent effects”. In such cases, the energy between the ground state and excited state is affected by the dipole interaction between the solvent and the chromophore which is function of the solvent refractive index and dielectric constant. Taking only the continuum dielectric properties (the dielectric constant and the refractive index) as a measure of the solvation energy, energy of absorption or λmax is found to be related to the solvent polarity function, ∆f. The polarity function can be calculated from
+	</p>
+	<p>
+	\begin{equation} 
+	∆f = [(D-1)/(2D+1)] - [(n^2 - 1)/(2n^2 + 1)]
+	\end{equation}
+
+
+	where D is the dielectric constant and n is the refractive index of the solvent.
+
+	Here absorptions of coumarin138have been studied in a number of polar and nonpolar solvents, namely cyclohexane, dioxane, acetonitrile, ethanol and ethylene glycol, to demonstrate the solvent effect.
+
+</p>
+<p>
+<img src="images/2_2.png" alt="EXP2_2" style="height:300px" style="width:300px"  />
+</p>
+<p align="center">
+<b>Figure 2:</b> Molecular structure of coumarin138.
+</p>
+	<p><b>Table 1.</b>Solvent properties and maximum absorbances and corresponding absorption wavelengths (λmax) of coumarin138.</p>
+	<p>
+	<TABLE WIDTH=2343 CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=376>
+	<COL WIDTH=376>
+	<COL WIDTH=376>
+	<COL WIDTH=767>
+	<COL WIDTH=377>
+	<TR VALIGN=TOP>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">Solvent</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000"><I>Refractive
+	Index (n)</I></FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm; margin-bottom: 0cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000"><I>Dielectric</I></FONT></FONT></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000"><I>Constant
+	(D)</I></FONT></FONT></P>
+	</TD>
+	<TD WIDTH=0 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000">∆<FONT FACE="Times New Roman, serif"><I>f</I></FONT></FONT></P>
+	</TD>
+	<TD WIDTH=767 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm; margin-bottom: 0cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">Abs </FONT><FONT COLOR="#000000"><I>at
+	λ</I></FONT><FONT COLOR="#000000"><SUB><I>max</I></SUB></FONT></FONT></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=377 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm; margin-bottom: 0cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">λ</FONT><FONT COLOR="#000000"><SUB>max</SUB></FONT></FONT></P>
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">(nm)</FONT></FONT></P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">Cyclohexane</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">1.424</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">2.01</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=0 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=767 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=377 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">Dioxane</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">1.420</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">2.21</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=0 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=767 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=377 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">Acetonitrile</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">1.342</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">35.94</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=0 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=767 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=377 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">Ethanol</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">1.359</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">23.40</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=0 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=767 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=377 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT FACE="Times New Roman, serif"><FONT COLOR="#000000">Ethylene
+	Glycol</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">1.429</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=376 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif">38.69</FONT></FONT></P>
+	</TD>
+	<TD WIDTH=0 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=767 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	<TD WIDTH=377 BGCOLOR="#ffffff" STYLE="border: none; padding: 0cm">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -0.31cm; margin-right: 0.01cm">
+	<BR>
+	</P>
+	</TD>
+	</TR>
+	</TABLE>
+	</p>
+
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-4">
+
+	<div id="lab-article-section-4-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/procedure.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	Procedure
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-4-content" class="content">
+	<p>
+	<ol>
+	<li>
+	Prepare five 1 × 10<sup>-5</sup> M coumarin-138 solutions in solvents: cyclohexane, dioxane, acetonitrile, ethyl alcohol and ethylene glycol. Such dilute solutions can be prepared via dilution from 1 × 10<sup>-4</sup> M stock solutions in respective solvents. Here solutions in different solvents are shown on a solvent selection bar.
+	</li>
+	<li>
+	The absorption measurements with all the solutions are carried out one after another as follows.
+	</li>
+	<li>
+	To take a particular solution, click on the appropriate solvent on the solvent selection bar and then click on the volumetric flask containing the solution.
+	</li>
+	<li>
+	Click on the quartz cuvette (path length, 1 cm ×1 cm) to take it to the instrument table. 
+	</li>
+	<li>
+	Click on the glass Pasteur pipette to collect about 3 mL of the experimental solution which will be transferred into the quartz cuvette. 
+	</li>
+	<li>
+	Click on the pipette to draw the solution into it.
+	</li>
+	<li>
+	Click on the pipette to take it out of the volumetric flask.
+	</li>
+	<li>
+	Click on the pipette again to transfer the solution into the cuvette.
+	To start the absorption spectral scan, click on the pop-up “Start Absorption Measurement”.
+	</li>
+	<li>
+	Turn on the spectrophotometer clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.
+	</li>
+	<li>
+	Open the lid of the sample chamber of the spectrophotometer by clicking on the lid for placing the sample in the cell-holder.
+	Click on the cuvette to place it in the sample holder. One has to use pure solvent as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown.
+	</li>
+	<li>
+	Close the lid of the sample chamber by clicking on it.
+	</li>
+	<li>
+	Open the measurement set-up screen by clicking on the absorption measurement icon on the computer monitor.
+	</li>
+	<li>
+	On the screen, enter the wavelength range. 	Start: 430 nm 		End: 275 nm. In real operation, the wavelength range of incident light for the sample is chosen and the wavelength scan is run via the accompanied computer software. One can run the scan in absorbance (A) or transmittance (%T) mode.
+	</li>
+	<li>
+	Click on the green Start button on the measurement set-up screen to run the wavelength scan. Observe the wavelength scan.
+	</li>
+	<li>
+	Click on Close button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data.
+	</li>
+	<li>
+	To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.
+	Click on the lid of the sample chamber to close it.
+	</li>
+	<li>
+	Click on Reset button to start over the measurements.
+	</li>
+	<li>
+	Repeat the Absorption measurements with all the solvents by clicking on the solvent selection bar first and then on the volumetric flask containing the solution.
+	</li>
+	<li>
+	Collect all data by clicking on the Data tab.
+	</li>
+	<li>	
+	Examine UV-visible absorption spectra with different solvents.
+	</li>
+	<li>
+	Find out the maximum absorption wavelengths and corresponding absorbance values for all the solvents and tabulate them along with the solvent dielectric constants and refractive indices values.
+	</li>
+	<li>
+	Is there a relationship or trend between solvent polarity and the wavelength of maximum absorbance?</li>
+	<li>
+	Discuss your observations.
+	</li>
+	</ol>
+
+
+
+
+
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-5">
+
+	<div id="lab-article-section-5-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/experiment.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-5-heading" class="heading">
+	Simulator
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-5-content" class="content">
+	<p>
+	<a href="./media/2.html" target="_blank">Click here to go to lab</a>
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-6">
+
+	<div id="lab-article-section-6-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/quiz.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-6-heading" class="heading">
+	Quiz
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-6-content" class="content">
+	<h3>
+	Pre-Experiment
+	</h3>
+	<ol>
+	<li>
+	Why do polar solvents obliterate the fine spectral structures in an absorption band?
+	</li><li>
+	In which state is a molecule generally more polar – when (i) pi molecular orbital is full or (ii) one pi electron is excited to pi antibonding molecular orbital?
+	</li><li>
+	Which solvent between cyclohexane and ethanol has higher dipole moment?
+	</li><li>
+	When a chromophore binds to proteins, the binding site is generally more hydrophobic than the solution. Then, what kind of shift do you expect to observe in the absorption peak position compared to the peak observed when the chromophore is free in solution?
+	</li>
+	</ol>
+	<h3>
+	Post-Experiment
+	</h3>
+	<ol>
+	<li>
+	What are the cut-off wavelengths for the solvents used in this experiment? 
+	</li><li>
+	Do you observe any change in the form of the absorbance bands while moving from nonpolar to polar solvents? 
+	</li><li>
+	What kinds of possible electronic transitions do you expect to observe in coumarin-138?
+	</li><li>
+	Which parameter between ‘solvent polarity function’ and dielectric constant show better correlation with the peak positions? 
+	</li>
+	</ol>
+
+	</div>
+
+	</section>
+	<section id="lab-article-section-7">
+
+	<div id="lab-article-section-7-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img id="feedback" src="../images/references.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-7-heading" class="heading">
+	References
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-7-content" class="content">
+	<ol>
+	<li>
+	K. Chandrasekhar, L. R. Naik, H. M. Suresh Kumar, and N. N. Math, “Steady-state absorption and fluorescence study: Dipole moments of coumarins.” Indian Journal of Pure & Applied Physics 2006, Vol. 44, pp. 292-299.
+	</li><li>
+	Barik, N. K. Goel, K. I. Priyadarsini and H. Mohan, “Effect of Deuterated Solvents on the Excited State Photophysical Properties of Curcumin” Journal of Photoscience 2004, Vol. 11(3), pp. 95-99.
+	</li><li>
+	http://nsdl.niscair.res.in/bitstream/123456789/793/1/spectroscopy+of+organic+compounds.pdf
+	</li><li>
+	B. Valeur, “Molecular Fluorescence: Principles and Applications”, 2002, WILEY-VCH Verlag GmbH, 69469, Weinheim, Germany.
+	</li><li>
+	J. R. Albani, Principles and Applications of Fluorescence Spectroscopy, 2007, Blackwell Science Science Ltd, Oxford, UK.
+	</li><li>
+	F. A. Settle (Editor), ‘Handbook of Instrumental Techniques for Analytical Chemistry”, Pearson Education Limited (2004). 
+	</li><li>
+	D. Harvey, “Modern Analytical Chemistry”, McGraw-Hill Education (2000).
+	</li><li>
+	T. Owen, “Fundamentals of modern UV-visible spectroscopy”, Primer, Agilent Technologies (2000).
+	“Fundamentals of UV-visible spectroscopy: Workbook”, Publication Number 5980-1398E, a primer from Agilent Technologies (2000). 
+
+	</li>
+	</ol> 
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-99">
+
+	<div id="lab-article-section-99-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-99-heading" class="heading">
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-99-content" class="content">
+	</div>
+	</section>
+
+	<section id="lab-article-section-100">
+
+	<div id="lab-article-section-100-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-100-heading" class="heading">
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-100-content" class="content">
+	</div>
+	</section>
+
+
+	</div>	
+
+	<!-- An article can have a sidebar that contain related 
+	links and additional material (it is optional at this 
+			moment)-->
+	<aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+	sidebar-->	
+	</aside>
+
+	<!-- Article footer can display related content and 
+	additional links -->						
+	<footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+	</footer>
+
+	</article>
+
+	<!-- Links to other labs, about us page can be kept the lab 
+	footer-->
+	<footer id="lab-footer" class="default">
+	<!-- Put the content here-->
+	</footer>
+
+	</div>
+	</body>
+	</html>

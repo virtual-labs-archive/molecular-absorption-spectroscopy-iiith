@@ -1,0 +1,734 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="../index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Verification of Beer-Lambert's law
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+<p align="JUSTIFY">
+        In absorption spectrometry the extent to which the intensity of the transmitted radiation decreases will depend on the path length through the sample and on the concentration of the absorbing species. Beer-Lambert law shows how the intensity of the transmitted radiation decreases with the path length through the sample and on the concentration of the absorbing species. Beer-Lambert law applies over a range of concentrations of many absorbing species.
+    </p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+<p align="JUSTIFY">
+        To verify the linearity of Beer-Lambert law
+    </p>	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+ <p align="JUSTIFY">
+        According to Lambert, for parallel, monochromatic radiation that passes through an absorber of constant concentration, the radiant intensity decreases logarithmically as the path length, l, increases arithmetically (Lambert’s law). According to Beer, the transmittance of a stable solution is an exponential function of the concentration, c, of the absorbing solute (Beer’s law). When both path length and concentration are variable, the combined Beer–Lambert law is given as follows:
+    </p>
+
+
+    <p align="JUSTIFY">
+        <i>I</i>
+        <sub><i>t </i></sub>
+= <i>I</i><sub><i>o</i></sub><i> </i>exp (<i>- k c l</i>) or, log<sub>e</sub> ( <i>I</i><sub><i>o</i></sub><i> / I</i><sub><i>t</i></sub><i> </i>) =        <i>k c l</i>
+    </p>
+
+ 
+
+
+    <p align="JUSTIFY">
+        where <i>I</i><sub><i>o</i></sub><i> </i>and <i>I</i><sub><i>t</i></sub><i> </i>are the incident and transmitted intensities, respectively and k is a
+        constant but is a function of wavelength.
+    </p>
+    <p align="JUSTIFY">
+    Although the quantity I/I<sub>0</sub> (i.e. the transmittance) is measured easily, a graph of transmittance versus concentration will be a logarithmic curve and therefore, it is not the best quantity to deal with. Therefore, the Beer-Lambert Law is considered in the logarithmic form.<br>
+    
+    </p>
+    <p align="JUSTIFY">
+        Converting to the base 10 logarithm, the equation becomes:<br>
+    </p>
+
+    <p align="JUSTIFY">
+        log ( <i>I</i><sub><i>o</i></sub><i> / I</i><sub><i>t</i></sub><i> </i>) = <i>A </i>= <i>ε</i><i> c l</i>
+    </p>
+
+    <p align="JUSTIFY">
+        where A = <b>absorbance</b> and <i>ε</i>, another constant = <b>absorptivity</b> (formerly called the <b>extinction coefficient</b>). The absorptivity depends on the wavelength of 		light as well as on the identity of the absorbing substance and the identity of the solvent. If the concentration is measured in mol.L<sup><i>−1</i></sup>, the absorptivity is 	called the molar absorptivity.
+    </p>
+
+
+    <p align="JUSTIFY">
+    Spectra are plotted either as absorbance, A, or as the transmittance, T, against wavelength, wavenumber or frequency, where <i>T </i>= (<i>I</i><sub><i>t</i></sub><i>/I</i><sub><i>o</i></sub> or sometimes as percentage transmittance = 100 T. The Beer-Lambert law applies equally to infrared absorption spectra. A can have any value from 0 to infinity. T must be between 0 and 1.
+    </p>
+
+
+
+    <p align="JUSTIFY">
+    One can find from the above mathematical form of the Beer-Lambert law that it is a straight line equation with zero intercept. That is, a plot of absorbance versus concentration should be a straight line passing through the origin whose slope is (&#949;.l). If the path length of the sample is 1 unit (say, 1 cm), the slope equals the numerical value of &#949;. Therefore, in order to verify the validity of Beer-Lambert Law, a number of absorbance–concentration data points should be obtained for a sample that are measured in a given sample holder of unit path length. Calibration graphs of A against c may be plotted to verify that the linearity of Beer-Lambert law. It is worth noting that a certain degree of data scatter usually occurs due to personal errors in measurements. Therefore, it is necessary to obtain a best fit straight line. In addition to these small scatters in data points, sometimes deviations from linearity occur though there are no known exceptions to the Beer-Lambert law. The deviations from linearity may arise from high analyte concentrations, chemical associations, and instrumental origin. Real deviations arise from changes in the refractive index of the analytical system; these changes will be significant only in high-absorbance differential measurements. The Beer–Lambert law is well obeyed by many substances at low to moderate concentrations. Dilute solutions will give better linearity of results. Deviations occur at higher concentrations where absorptivity depends on the concentration. Specific chemical effects such as association of the molecules of the substance affects the analyte species which changes the nature and hence &#949; of the absorbing species. When the incident radiation is polychromatic (or measured in a part of the spectrum other than at an absorbance maximum), the Beer-Lambert plot shows a negative deviation. There are also other limitations of the beer-Lambert law.
+    </p>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+
+<ol>
+        <li>
+            <p align="JUSTIFY">
+                Prepare a standard K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> solution of strength nearly 3×10<sup>-3</sup>M (for the experiments described here we have used a solution of strength=3.16×10<sup>-3</sup>M). 			This is used as stock solution.<br>
+From the above stock solution, prepare six different concentrations of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>. (In the experiments described here we have taken  K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> to water in the volume ratio of (i) 0.5 mL:9.5 mL, (ii) 1.0 mL:9.0 mL, (iii) 1.5 mL:8.5 mL, (iv) 2.0 mL:8.0 mL, and (v) 2.5 mL:7.5 mL, respectively. Calculate the molar concentrations of these solutions before proceeding for the measurements). Click on concentration bar to select the concentration of  K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>. 
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Turn on the instrument clicking on the power button and wait for 30 min for initialization of the instrument.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Click and drag on the concentration bar to choose the appropriate concentration of the solution whose absorbance has to be measured. One should start with the lowest concentration solution first. Why? 
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+               Click on the beaker to take a clean, dry beaker.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+		Click on the volumetric flask to pour the solution into the clean, dry beaker.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Click on the micropipette to collect appropriate quantity of solution from the beaker.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+               Take a cuvette (quartz cuvette with a given path length, say, 1 cm) by clicking on it.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+		Pour the solution from the micropipette into the cuvette by clicking on the micropipette. (In real measurements, the cuvette is filled to two-third of its volume.)
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Click on the spectrophotometer lid to open it.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+		Click on the cuvette to place it in the sample holder. One has to use water as the sample blank or reference in an identical cuvette for this measurement. Here a double beam 			spectrophotometer is shown. In this case, one can place the sample in the sample holder (often the front one) and the sample bank or reference in the reference holder (often 			the back one) simultaneously.
+            </p>
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Run the wavelength scan by clicking on the Computer monitor first and then on the Scan button there to observe the wavelength scan. In the real spectrophotometer, an appropriate wavelength range of incident light for the sample can be chosen and the wavelength scan are run via the accompanied computer software. One can run the scan in absorbance or transmittance mode. The scan data is stored in the computer. If the spectrophotometer is a single beam instrument, then first the sample blank or reference is taken in a cuvette and the wavelength scan is run followed by the sample. One has to subtract the reference data from the sample data for respective wavelengths.
+
+            </p>
+            
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Click on Reset button to start new measurement.
+            </p>
+            
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Select next higher concentration and repeat the measurement. Every time one should rinse the cuvette taking a small portion of the solution from the solution that will be measured next. Similarly, one can repeat it for all the concentrations one after another.
+
+            </p>
+            
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Collect all data by clicking on the Data tab.
+            </p>
+            
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Plot the absorbance of the sample at various wavelengths for different concentrations and determine the wavelength of maximum absorptions i.e., spectral peak-positions. 
+            </p>
+            
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Find out the wavelengths of maximum absorbance (&lambda;<sub>max</sub>), the absorbance at &lambda;<sub>max</sub> and at another wavelength (say, 335 nm) for all the concentrations of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> and make a table containing these data. 
+            </p>
+            
+        </li>
+<li>
+<p align="JUSTIFY">
+               Plot absorbance vs. concentration for a given . 
+            </p>
+</li>
+        <li>
+            <p align="JUSTIFY">
+                Connect the points first with line segments. Then attempt linear fits and calculate linear regressions.
+            </p>
+            
+        </li>
+        <li>
+            <p align="JUSTIFY">
+                Verify the Beer-Lambert Law by observing whether absorbance and transmittance values have linear correlation with concentration or not. Discuss your results.
+            </p>
+            
+        </li>
+      </ol>
+    <p align="JUSTIFY">
+        <br/>
+    </p>
+    <p>
+    </p>
+    <p align="JUSTIFY">
+        Table1. Absorbance values for different concentrations of K<sub>2</sub>Cr<sub>2</sub>O<sub>7 </sub>at two different wavelengths.
+    </p>
+    <p>
+    </p>
+    <table width="698" cellpadding="7" cellspacing="0">
+        <colgroup>
+            <col width="56"/>
+            <col width="127"/>
+            <col width="126"/>
+            <col width="151"/>
+            <col width="159"/>
+        </colgroup>
+        <tbody>
+            <tr valign="TOP">
+                <td width="56">
+                    <p align="LEFT">
+                        SNo
+                    </p>
+                </td>
+                <td width="127">
+                    <p align="LEFT">
+                        Concentration K<sub>2</sub>Cr<sub>2</sub>O<sub>7 </sub>in (M)
+                    </p>
+                </td>
+                <td width="126">
+                    <p align="LEFT">
+                        λ<sub><i>max </i></sub>in nm
+                    </p>
+                </td>
+                <td width="151">
+                    <p align="LEFT">
+                        Absorbance
+                    </p>
+                    <p align="LEFT">
+                        at λ=350 nm
+                    </p>
+                </td>
+                <td width="159">
+                    <p align="LEFT">
+                        Absorbance another wavelength (say,λ=335 nm)
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        1
+                    </p>
+                </td>
+                <td width="127">
+                    <p align="LEFT">
+                        1.58×10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="126">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="151">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="159">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="56">
+                    <p align="LEFT">
+                        2
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        3.16×10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        3
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        4.74×10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        4
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        6.32×10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        5
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        7.90×10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+            <tr valign="TOP">
+                <td width="46">
+                    <p align="LEFT">
+                        6
+                    </p>
+                </td>
+                <td width="117">
+                    <p align="LEFT">
+                        9.48×10<sup>-4</sup>
+                    </p>
+                </td>
+                <td width="116">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="141">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+                <td width="149">
+                    <p align="LEFT">
+                        <br/>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+	
+      </section>
+      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+		<p>
+			<a href="./media/6.html" target="_blank">Click here to go to lab</a>
+		</p>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+<h3>
+Pre-Experiment
+</h3>
+
+<ol>
+<li>Why will the Beer-Lambert law be applicable only for dilute solutions, non-fluorescent substances and for the samples where neither association nor dissociation is present? </li>
+<li>If Beer-Lambert law is strictly followed by an absorbing substance, what will happen if the path length is doubled and concentration is halved?</li>
+<li>Will the Beer-Lambert law be applicable to vibrational spectroscopy?</li>
+<li>What is the origin of the dependence of absorbance on wavelength?</li>
+<li>For a very dilute solution (small c, concentration), the intensity of absorbed light is given by, I<sub>abs</sub> = 2.303 I<sub>0</sub> &epsilon; c l. Verify it. [Hint: I<sub>abs</sub> = I<sub>0</sub> – I<sub>trans</sub> ]</li>
+    </ol>
+
+<h3>
+Post-Experiment
+</h3>
+
+<ol>
+<li>Do you expect a similar fall in absorbance values with the decrease in concentration, if you replace potassium dichromate (K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>) by potassium dichromate solution? Justify your answer.</li>
+<li>What is the value of the intercept of your calibration plot? Justify your answer.</li>
+<li>How will a plot of &epsilon; versus concentration be different from that of absorbance versus concentration?</li>
+<li>Plot transmission versus concentration for a given &lambda; (preferably near &lambda;<sub>max</sub>). How is it different from the absorbance vs. concentration plot? </li>
+    </ol>
+
+
+
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+
+<ol>
+<li>
+B. Valeur, “Molecular Fluorescence: Principles and Applications”, 2002, WILEY-VCH Verlag GmbH, 69469, Weinheim, Germany.
+</li><li>
+J. R. Lakowicz, “Principles of Fluorescence Spectroscopy”, 2nd Ed., 1999, Kluwer Academic/Plenum Publishers, New York.
+</li><li>
+P. Atkins and J. De Paula,“Physical Chemistry”, W. H. Freeman & Company, Dec 2009. 
+</li><li>
+F. Rouessac and A. Rouessac, “Chemical Analysis: Modern Instrumentation Methods and Techniques”, Second Edition, 2007, John Wiley & Sons Ltd.
+</li><li>
+S. Beck, “Across the Spectrum: Instrumentation for UV/Vis Spectrophotometry”, The Scientist 12[3]:20, Feb. 02, 1998.
+</li><li>
+R. Sjöback, J. Nygren and M. Kubista,“Absorption and fluorescent properties of fluorescein” , SpectrochimicaActa Part A 51, L7 – L21(1995).
+</li><li>
+F. A. Settle (Editor), ‘Handbook of Instrumental Techniques for Analytical Chemistry”, Pearson Education Limited (2004). 
+</li><li>
+D. Harvey, “Modern Analytical Chemistry”, McGraw-Hill Education (2000).
+</li><li>
+T. Owen, “Fundamentals of modern UV-visible spectroscopy”, a primer from Agilent Technologies (2000).
+</li><li>
+“Fundamentals of UV-visible spectroscopy: Workbook”, Publication Number 5980-1398E, a primer from Agilent Technologies (2000). 
+</li>
+        </ol>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

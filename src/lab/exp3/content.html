@@ -1,0 +1,620 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+
+<!-- The lab Header contains the logo and the name of the lab, 
+	usually displayed on the top of the page-->
+
+	<header id="lab-header">
+
+	<div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+	<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+	<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+
+	<map name="logos">
+
+	<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+	<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+
+	<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+	</map>
+
+	</div>
+
+	</a>
+	</div>
+
+	<div id="lab-header-heading" class="heading">
+	<!-- Write the name of your lab and link it to the home page
+	of your lab. -->
+	<a href="../index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+	</div>
+
+	<!-- Add any additional element or link you want to add to 
+	the lab header, For example : Help (Enclosing them with 
+			suitable div is recommended)-->
+
+	</header>
+
+
+	<!-- The lab article is the main content area where all the 
+	experiment content sits-->
+	<article id="lab-article">
+
+
+	<!-- The lab article has an header, optional navigational 
+	menu, number of sections, an optional sidebar and a closing 
+	footer-->
+	<header id="lab-article-header">
+
+	<!-- You can add a welcome message or title of the 
+	experiment enclosed in h1 tag here -->
+	<div id="lab-article-heading" class="heading">
+Sample Path Length Dependence of Absorbance (Lambert Law) 
+	</div>
+
+	<!-- Add any additional element if required with proper 
+	enclosing-->
+	</header>
+
+
+	<!-- Navigation menu is useful to organize the view of 
+	multiple sections inside the article-->
+	<nav id="lab-article-navigation">
+	<ul id="lab-article-navigation-menu">
+	<!-- The menu will be dynamically generated to contain the 
+	headings of your sections or instead write the menu items 
+	of your choice individually enclosed in <li> tag as shown 
+	below-->
+	</ul>
+	</nav>
+
+
+	<!-- All the sections of your lab or experiment can be 
+	enclosed together with a div element as shown below-->
+	<div id="lab-article-sections">
+
+	<!-- First section of the article-->
+	<section id="lab-article-section-1">
+	<div id="lab-article-section-1-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/introduction.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	<p align="justify">
+	Light absorbing films are coated on glass panes for many applications. We know that more and more light is absorbed with the increase in the thickness of the film. When absorption of light (electromagnetic radiation) occurs while it passes through a substance or a solution, the magnitude of light absorbed depends on the distance traveled by the light inside the absorbing sample.  The distance traveled by the light inside the absorbing sample is called sample 'path length'. French scientist Pierre Bouguer and later Johann Heinrich Lambert, a Swiss scientist, investigated the absorption of light in transparent media and formulated Lambert’s law (Bouguer’s law or Bouguer-Lambert law) regarding the attenuation of a light beam in the media. 
+	</p>
+	</div>
+
+	</section>
+
+
+	<!-- Second section of the article-->
+	<section id="lab-article-section-2">
+
+	<div id="lab-article-section-2-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/objective.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	Objective
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-2-content" class="content">
+	<p align="justify">
+	To understand and determine the relationship between the sample path length and the absorbance of a given sample. 
+	</p>
+	</div>
+
+	</section>
+
+
+	<!-- Second section of the article-->
+	<section id="lab-article-section-3">
+
+	<div id="lab-article-section-3-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/theory.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	Theory
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-3-content" class="content">
+	<p>
+	We know that many organic molecules do not absorb electromagnetic radiation in the ultraviolet-visible (UV-VIS) regions (~wavelengths range 190 nm - 800 nm). However, there are some compounds which absorb a portion of the radiation when a radiation passes through them. 
+	</p>
+	<p>
+	There is a relationship between the amount of light absorbed and the distance the light travels through the absorbing medium. This relationship is known as the Lambert law (Bouguer-Lambert law). According to the Lambert law, each layer of equal thickness of the medium absorbs an equal fraction of the light traversing it. In other words, the fraction of light absorption is proportional to the sample path length. Say, a beam of monochromatic radiation of intensity Io,  falls on a sample. For a traversal of a small path length dℓ (with unit cross-section, ℓ is the path length) the decrease in the intensity is dI due to the absorption of radiation. Then according to the Lambert law,  
+	</p>
+	<p>
+	\begin{equation}
+	dI_&#955; / I_&#955; \propto -dl
+	\end{equation}
+	</p>
+	<p>
+	<center>
+	or
+	</center>
+	</p>
+	<p>
+	\begin{equation}
+	dI_&#955; / I_&#955; = -K_&#955;.dl
+	\end{equation}
+	</p>
+	<p>
+	where I<sub>&#955;</sub>  is the intensity in the wavelength interval &#955;  and &#955;+d&#955; and k<sub>&#955;</sub> is a constant, practically independent of path length but depends on the wavelength, and is known as the absorption coefficient. 
+	Rearrangement  and integration yield the following equation: 
+	</p>
+
+	<p>
+	\begin{equation}
+	I_&#955; / I_{O,&#955;} = exp (-K_&#955; l)
+	\end{equation}
+	where I<sub>&#955;</sub>  intensity of the beam of radiation leaving the sample after absorption.
+	For simplicity let us drop the suffix, &#955;, and express the above equation as follows:
+	\begin{equation}
+	-log_e (I/I_o) = kl
+	\end{equation}
+	</p>
+	<p>
+	The fraction of the amount of radiation absorbed is known as transmittance, T = I/I<sub>0</sub>. T is often measured in terms of % transmittance, %T = 100×T.
+	Another parameter, absorbance,  A, is defined as, 
+	\begin{equation}
+	A = -log_{10} T = log_e (I/I_o) / 2.303 = kl/2.303
+	\end{equation}
+	</p>
+	<p>
+	Therefore, 	A = (constant)× ℓ. 
+
+	The measurement of A at a particular wavelength gives a measure of the absorption capacity and in turn transparency of the medium with respect to the wavelength. By using a spectrophotometer and a few cuvettes of different path lengths, one can verify this law that the fraction of the light absorbed is proportional to the path length. In other words, one can find that the absorbance (A) varies linearly with the path length, ℓ. 
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-4">
+
+	<div id="lab-article-section-4-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/procedure.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	Procedure
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-4-content" class="content">
+	<p>
+	To understand the relationship between the sample path length and the absorbance of a given sample, click on the first Simulator. 
+	To determine the relationship between the sample path length and the absorbance of a given sample, click on the second Simulator and proceed as follows.
+	</p>
+	<p>
+	<ol>
+	<li>
+	Turn on the instrument clicking on the power button and wait for 30 min for initialization of the instrument.
+	</li><li>
+	Make, say 0.001 M, aqueous solution of potassium dichromate in 0.01 N H<sub>2</sub>SO<sub>4</sub>. 
+	</li><li>
+	Click on the beaker to take a clean, dry beaker.
+	Click on the volumetric flask to pour the solution into the clean, dry beaker.
+	</li><li>
+	Click on the micropipette to collect appropriate quantity of solution from the beaker.
+	Take a cuvette by clicking on it.
+	</li><li>
+Pour the solution from the micropipette into the cuvette by clicking on the cuvette. (In actual measurements, the cuvette is filled to approx. two-third of its volume.)
+	</li><li>
+	Click on the spectrophotometer lid to open it.
+	</li><li>
+	Click on the cuvette to place it in the sample holder. One has to use aq. 0.01 N H<sub>2</sub>SO<sub>4</sub> as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown. In this case, one can place the sample in the sample holder and the sample bank or reference in the reference holder simultaneously.
+	</li><li>
+	Run the wavelength scan by clicking on the Computer monitor and then on the Scan button and observe the wavelength scan. In the real spectrophotometer operation, an appropriate wavelength range of incident light for the sample can be chosen and the wavelength scan are run via the accompanied computer software. One can run the scan in absorbance or transmittance mode. The scan data is stored in the computer. If the spectrophotometer is a single beam instrument, then first the sample blank or reference is taken in a cuvette and the wavelength scan is run followed by the sample. One has to subtract the reference data from the sample data for respective wavelengths.
+	</li><li>
+	Click on Reset button to start new measurement. 
+	Repeat the measurements with cuvettes of different path lengths.
+	</li><li>
+	Collect all data by clicking on the Data tab. 
+	Plot the absorbance of the sample at various wavelengths for different path lengths and determine the wavelength of maximum absorptions i.e., spectral peak-positions.
+	</li><li>
+	Plot the absorbance values for a particular wavelength (say, 350 nm) vs. path lengths and calculate linear regression. Note down the correlation coefficient which is a measure of the quality of a calibration and here tells how good a straight line fits to all of the calibration points.
+	</li><li>
+	Repeat the plotting of the absorbance values vs. path lengths for two other wavelengths say, 375 nm and 440 nm and calculate linear regressions.
+	</li><li>
+	Construct similar three plots taking transmittance in place of absorbance values vs. path lengths for three wavelengths 350 nm, 375 nm and 440 nm and calculate linear regressions. Note down the correlation coefficients.
+	</li><li>
+	Verify the Lambert Law observing whether absorbance and transmittance values have linear correlation with path length or not.
+	</li><li>
+	Normalize absorbance measurements to 1 mm path length by dividing the absorbance data by the corresponding path length for a given wavelength. Are the normalized data (within experimental error) path length-specific at a given wavelength? Discuss your results. 
+	</li>
+	</ol>
+	</p>
+	<p>
+	<b>Table 1.</b> Measured Absorbance and Transmittance values at different path lengths for different wavelengths
+	</p>
+	<p>
+	<TABLE WIDTH=617 CELLPADDING=1 CELLSPACING=0>
+	<COL WIDTH=86>
+	<COL WIDTH=74>
+	<COL WIDTH=9>
+	<COL WIDTH=86>
+	<COL WIDTH=4>
+	<COL WIDTH=65>
+	<COL WIDTH=104>
+	<COL WIDTH=65>
+	<COL WIDTH=103>
+	<TR VALIGN=TOP>
+	<TD ROWSPAN=3 WIDTH=96 HEIGHT=25 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR><BR>
+	</P>
+	<P CLASS="western" ALIGN=CENTER><BR><BR>
+	</P>
+	<P CLASS="western" ALIGN=LEFT>Wavelengths        
+	</P>
+	</TD>
+	<TD COLSPAN=8 WIDTH=526 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #00000a; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>Path Lengths and
+	Absorbance-Transmittance Values 
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD COLSPAN=3 WIDTH=96 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #00000a; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>10 mm</P>
+	</TD>
+	<TD WIDTH=86 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #00000a; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>5 mm</P>
+	</TD>
+	<TD COLSPAN=4 WIDTH=350 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #00000a; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>1 mm</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Abs</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Transmittance</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #00000a; border-right: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Abs</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #000001; border-right: 1px solid #00000a; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Transmittance</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border-top: 1px solid #000001; border-bottom: 1px solid #000001; border-left: 1px solid #00000a; border-right: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Abs</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=LEFT>Transmittance</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=86 HEIGHT=12 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>350 nm</P>
+	</TD>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=86 HEIGHT=12 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>375 nm</P>
+	</TD>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	</TR>
+	<TR VALIGN=TOP>
+	<TD WIDTH=86 HEIGHT=11 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER>440 nm</P>
+	</TD>
+	<TD WIDTH=74 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD COLSPAN=3 WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=104 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=65 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	<TD WIDTH=103 BGCOLOR="#ffffff" STYLE="border: 1px solid #000001; padding: 0cm 0.02cm">
+	<P CLASS="western" ALIGN=CENTER><BR>
+	</P>
+	</TD>
+	</TR>
+	</TABLE>
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-5">
+
+	<div id="lab-article-section-5-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/experiment.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-5-heading" class="heading">
+	Simulator
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-5-content" class="content">
+	<p>
+	<a href="./media/length.html" target="_blank">Click here to find out the effect of sample path length</a><br>
+	<!--<a href="abs_exp3.html" target="_blank">Click here to go to lab</a><br>-->
+	<a href="./media/3.html" target="_blank">Click here to go to lab</a>
+	</p>
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-6">
+
+	<div id="lab-article-section-6-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img src="../images/quiz.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-6-heading" class="heading">
+	Quiz
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-6-content" class="content">
+	<h3>
+	Pre-Experiment
+	</h3>
+
+	<ol>
+	<li>
+	What is the ratio of absorbance values for light absorbing samples slabs of width 2x, 3x and x?
+	</li><li>
+	Does the transmittance, T = I/I<sub>0</sub> depend on the intensity of the incident light?
+	</li><li>
+	Say, you have used two transparent cuvettes of 1 cm edge length for the absorbance measurement of a sample.  One cuvette is specially made with a central narrow slab for holding less volume of sample. Compare the absorbance values in both the cases.
+	</li><li>
+	If you plot absorbance values of the sample vs. path lengths for a particular wavelength for two different concentrations of a substance, where the concentration of one solution is double the other, what difference do you observe in your plot?
+	</li><li>
+If absorbance is defined as, A = - log<sub>10</sub> T, then what will be the expression of A in terms of % transmittance (%T)? [Hint: %T = 100 × T)
+	</li>
+	</ol>
+
+	<h3>
+	Post-Experiment
+	</h3>
+
+	<ol>
+	<li>
+	In actual measurements, the cuvette is filled to approx. two-third of its volume. What may happen if you take a very small quantity of sample solution, filling say, less than one-third of the cuvette volume?
+	</li><li>
+	Is the plot of absorbance values vs. path lengths for a particular wavelength always linear? Discuss your answer.
+	</li><li>
+	If you have a concentrated solution of a light absorbing substance, which path length cuvette – 1 mm or 10 mm – would you prefer for your measurement?
+	</li><li>
+	Can one use a reference cuvette (for blank) having path length different from the sample cuvette? Discuss your answer.
+	</li><li>
+	We know that A = (constant) × ℓ. The (constant) is the slope of the line obtained from absorbance vs. path length plot. Is the value of (constant) the same for all absorbance vs. path length plots? Why?
+	</li>
+	</ol>
+
+
+	</div>
+
+	</section>
+	<section id="lab-article-section-7">
+
+	<div id="lab-article-section-7-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<img id="feedback" src="../images/references.jpg" />
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-7-heading" class="heading">
+	References
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-7-content" class="content">
+
+	<ol>
+	<li>
+
+	“Chemical Analysis: Modern Instrumentation Methods and Techniques” by F. Rouessac and A. Rouessac, Second Edition, John Wiley & Sons Ltd (2007).
+	</li><li>
+	“Across the Spectrum: Instrumentation for UV/Vis Spectrophotometry” by S. Beck, The Scientist 12[3]:20, Feb. 02, 1998.
+	</li><li>
+	“Physical Chemistry” by P. Atkins and J. De Paula, Publisher: W. H. Freeman & Company (Dec 2009). 
+	</li><li>
+	“Absorption and fluorescent properties of fluorescein” by R. Sjöback, J. Nygren and M. Kubista in journal “Spectrochimica Acta Part A 51 (1995) L7 – L21.”
+	</li><li>
+	“Handbook of Instrumental Techniques for Analytical Chemistry” by F. A. Settle (Editor), Pearson Education Limited (2004). 
+	</li><li>
+	“Modern Analytical Chemistry” by D. Harvey, McGraw-Hill Education (2000). 
+	</li><li>
+	“Fundamentals of modern UV-visible spectroscopy”, Publication Number 5980-1397E, a primer from Agilent Technologies (2000). 
+	</li><li>
+	“Fundamentals of UV-visible spectroscopy: Workbook”, Publication Number 5980-1398E, a primer from Agilent Technologies (2000).  
+	</li>
+	</ol> 
+	</div>
+
+	</section>
+
+	<section id="lab-article-section-99">
+
+	<div id="lab-article-section-99-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-99-heading" class="heading">
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-99-content" class="content">
+	</div>
+	</section>
+
+	<section id="lab-article-section-100">
+
+	<div id="lab-article-section-100-icon" class="icon">
+	<!-- Enclose the icon image for the section. -->
+	<a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+	</div>
+
+
+	<!-- The heading for the section can be enclosed in a 
+	div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-100-heading" class="heading">
+	</div>
+
+	<!-- Write the section content inside a paragraph 
+	element, You can also include images with <img> tag -->
+	<div id="lab-article-section-100-content" class="content">
+	</div>
+	</section>
+
+
+	</div>	
+
+	<!-- An article can have a sidebar that contain related 
+	links and additional material (it is optional at this 
+			moment)-->
+	<aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+	sidebar-->	
+	</aside>
+
+	<!-- Article footer can display related content and 
+	additional links -->						
+	<footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+	</footer>
+
+	</article>
+
+	<!-- Links to other labs, about us page can be kept the lab 
+	footer-->
+	<footer id="lab-footer" class="default">
+	<!-- Put the content here-->
+	</footer>
+
+	</div>
+	</body>
+	</html>

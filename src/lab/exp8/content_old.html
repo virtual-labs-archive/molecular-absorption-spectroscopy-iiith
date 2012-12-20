@@ -1,0 +1,560 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>FLORESCENCE VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">FLORESCENCE VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+      Determination of Fluorescence Quantum Yield of a Fluorophore
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+
+<p align="JUSTIFY">
+Fluorescence spectra, fluorescence quantum yield, and fluorescence lifetime are very important characteristic parameters in fluorescence analysis. After excitation, all molecules do not emit photons. Many pathways other than fluorescence emission contribute to fluorophore de-excitation. The fraction of the excited molecules that return to the ground state (S<sub>1</sub>&#8594;S<sub>0</sub> transition) with emission of photon is known as the "fluorescence quantum yield". In fluorescence one gets two kinds of spectra: excitation and emission spectra. The spectrum observed by measuring the variation of the fluorescence intensity from a fluorophore as a function of the emission wavelength is termed a <i>measured</i> emission spectrum. The corrected emission spectrum is obtained after correcting for instrumental and sample effects. The spectrum obtained by measuring the variation of the fluorescence intensity from a fluorophore as a function of the excitation wavelength is termed a <i>measured</i> fluorescence excitation spectrum. A corrected excitation spectrum is obtained if the photon flux incident on the sample is held constant. For a sufficiently dilute solution when the fraction of the exciting radiation absorbed is proportional to the absorption coefficient of the fluorophore and the quantum yield is independent of the exciting wavelength, the corrected excitation spectrum will be identical in shape to the absorption spectrum. Corrected spectra are important in the determination of quantum yield of fluorophores and in quantitative analysis. In the following, we discuss about the relationship among fluorescence lifetime and quantum yield and how the quantum yield can be determined for a flurophore molecule.
+
+
+
+    </p>	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+
+
+<p align="JUSTIFY">
+To understand the relationship between the fluorescence intensity and the concentration of a fluorophore analyte and to determine the unknown concentration of the analyte by using the relationship.
+    </p>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+	
+
+<p align="JUSTIFY">
+The fluorescence quantum yield (&#934;<sub>F</sub>) of a species is the measure of its fluorescence efficiency. After absorption of photons, a molecule may get de-excited via different competitive processes, including fluorescence. The fluorescence quantum yield (&#934;<sub>F</sub>) of a molecule can therefore be measured by the ratio of the excited molecules that return to the ground state (S<sub>1</sub>&#8594;S<sub>0</sub> transition) with emission of photon to the total number of the excited molecules per unit of time and volume. If k<sub>r</sub> is the fluorescence (radiative) rate constant and &#931;k is the sum of the rate constants that depopulate the S<sub>1</sub> state (= k<sub>r</sub> + k<sub>ic</sub> + k<sub>isc</sub> + k<sub>q</sub> + k<sub>ec</sub> + k<sub>pd</sub> + k<sub>d</sub> +....., for all the processes like radiative process (fluorescence), internal conversion, intersystem crossing, quenching, external conversion, predissociation, and dissociation, etc. respectively), then the quantum yield (&#934;<sub>F</sub>) can be written as follows
+    </p>
+    <p>
+    \begin{equation}
+    &#934;_F =k_r &#931;k
+    \end{equation}
+
+    </p>
+
+    <p>
+    Thus, the weaker the competitive phenomena, the higher the fluorescence. In the absence of any competing pathways &#934;<sub>F</sub> = 1. If fluorescence is sufficiently faster than the other deactivation processes, every molecule will take the fluorescence pathway for losing absorbed energy. In that case, &#934;<sub>F</sub> = 1. If one of the competing processes is faster than the fluorescence, the amount of emitted light will be negligible. In the intermediate cases, where the deactivation processes have a similar rate to the fluorescence, the extent by which the emitted light is diminished depends on their relative rates. 
+    </p>
+    <p>
+    Radiative (fluorescence) rate constant is related to the radiative lifetime, &#932;<sub>r</sub>, as 
+    \begin{equation}
+    				&#932;_r =1/ k_r
+    \end{equation}
+	The experimentally observed (real) fluorescence lifetime, &#932;<sub>F</sub> , is the average time the molecule spends in the excited state and is given by
+    \begin{equation}
+					&#932;_F = 1/&#931;
+    \end{equation}
+	Therefore, the quantum yield (&#934;<sub>F</sub>) can be determined by measuring the fluorescence lifetimes. 
+    <p>
+    <p>
+    Since the fluorescence quantum yield (&#934;<sub>_F</sub>) is the number of photons emitted by the radiative way over that absorbed by the molecule, the absolute method of quantum yield (&#934;<sub>_F</sub>) determination requires the number of photons absorbed and emitted to be determined. Using a standard fluorimeter with right-angle illumination of a solution sample, it is difficult to precisely determine the number of photons being absorbed and emitted by the sample. Actually small fraction of the light emitted from the sample reaches the detector of the fluorimeter. Similarly, a small fraction of the exciting light is absorbed by the sample. These absorption and emission fractions are unknown factors. The easiest way to estimate the quantum yield of a fluorophore is by comparison with a reference compound (standard) for which  &#934;<sub>F</sub> has been determined with high degree of accuracy. This method relies on the fact that the unknown fractions should be quantitatively the same for different sample solutions compared under identical conditions of excitation. Ideally, the reference compound should have similar excitation-emission characteristics to the compound of interest.
+    </p>
+    <p>
+    Thus, one can write quantum yield as 
+
+    \begin{equation}
+    			&#934;_F = [&#945; \times  (no. of photons detected)] / [&#946; \times  ( no. of photons absorbed)]		
+    \end{equation}
+    </p>
+    <p>
+    where &#945; and &#946; are constants related to the fraction of emitted light reaching the detector of the fluorimeter and the intensity of the excitation source at the excitation wavelength, respectively. The number of photons detected can be estimated from the wavelength integrated area, &#931;A, under the <i>corrected</i> fluorescence spectrum, assuming the counts per second unit of the ordinate as quanta. The number of photons absorbed, i.e., the fraction of exciting light absorbed by the sample is readily determined from a measurement of the absorbance at the excitation wavelength. This converts to the actual number of photons absorbed per unit time with knowledge of the precise intensity (photons per unit time per unit area) of the exciting light source at this wavelength, with the chosen aperture (slit width). Fraction of light absorbed is given by 
+    </p>
+
+    <p>
+
+    \begin{equation}
+    			f = 1 - 10^{-D}
+    \end{equation}
+
+	where D is the absorbance (optical density) at the excitation wavelength. The absorbance is kept below 0.05 to avoid inner filter effects. Hence, for unknown sample, <b>X</b>, one can write:
+
+    \begin{equation}
+				&#934;_{F,X} = [&#945; \times  &#931;A_X] / [&#946; \times  f_X] 			
+    \end{equation}
+
+	where &#931;A<sub>X</sub> is the integrated area under the corrected fluorescence spectrum for <b>X</b>. Similarly, for the reference material, <b>R</b>, one can write:
+
+    \begin{equation}
+				&#934;_{F,R} = [&#945; \times  &#931;A_R] / [&#946; \times  f_R 			
+    \end{equation}
+
+	By comparing the two measurements on solutions of sample X and a suitable reference, <b>R</b>, one gets the fluorescence quantum yield of the sample, <b>X</b> by dividing the above two equations and rearranging:
+
+    \begin{equation}
+				&#934;_{F,X} / &#934;_{F,R} = [&#931;A_X / &#931;A_R] \times  [f_R / f_X]
+    \end{equation}
+    </p>
+    <p>
+    where all terms on the right hand side of equation and  &#934;<sub>F,R</sub> are known. Here we have assumed that the measurements on solutions of <b>X</b> and <b>R</b> are made under identical conditions of excitation wavelength and aperture settings in the same solvent. If different solvents are used for <b>X</b> and <b>R</b>, then the equation should be further modified to allow for the effect of refractive index on the relative amount of fluorescence collected by the detector. This correction is required since the fluorescence is refracted at the surface separating the solution and air. The flux of fluorescence coming within the aperture of the detection system is inversely proportional to the square of the refractive index. Therefore, the above equation modifies to
+    </p>
+    <p>
+    \begin{equation}
+    			&#934;_{F,X} / &#934;_{F,R} =  [&#931;A_X / &#931;A_R] \times [f_R / f_X] \times [n_X / n_R]^2			
+    \end{equation}
+
+	where the n's are the refractive indices of the solvents used for the two solutions. 
+
+	If the absorbances of the sample and reference solutions are the same at the exciting wavelength, then
+    \begin{equation}
+				&#934;_{F,X} = &#934;_{F,R} \times [&#931;A_X / &#931;A_R] \times [n_X / n_R]^2	
+    \end{equation}
+
+    </p>
+    <p>The measured fluorescence quantum yield is the result obtained from a fluorescence spectrometric measurement when no corrections were made for instrumental response and sample effects. 
+    Therefore, in order to determine fluorophore quantum yield, one needs to measure the absorbances of the fluorophore and of the reference at the excitation wavelength, and needs to calculate the sum of their fluorescence intensities along their fluorescence emission spectra for the unknown as well as for the reference. One can easily determine the area under different emission spectra by integrating the emission spectra by using a computer or by using graph papers. Assuming a uniform thickness/density of paper, the ratio of the areas under the graphs can be also obtained by cutting out the paper under the graphs by using scissors and weighing each paper. Then the ratio of the weights of the two pieces of papers, one for each graph, is the same as the ratio of the areas. </p>
+    <p>
+    Quinine sulfate, fluorescein, rhodamine 101, rhodamine 6G, &#946;-carboline, perylene, cresyl violet, etc. are used as reference or standard compounds. Quinine in acidic media has been widely used as a standard for static quantum yield determinations. The quantum yield of quinine sulfate dissolved in 0.5 M H<sub>2</sub>SO<sub>4</sub> is 0.55 (&#955;ex=310 nm). Strictly speaking, one should obtain correction factors for the emission spectrum of a standard compound by recording it and comparing it to the data for a standard compound. In principle, quantum yield standards should have maximum overlap of the absorption and emission between sample and reference. Here we have chosen to determine the quantum yield of DAPI by using quinine sulfate as the standard substance. DAPI  is a blue fluorescent, cell permeable staining dye that demonstrates strong affinity for DNA binding. It is used in fluorescence microscopy, flow cytometry and microplate assays. </p>
+
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+	<p>
+<strong> To start the experiment do the following: </strong>
+<ol>
+<li>
+Prepare two solutions: a 2.3 x 10<sup>-4</sup> M quinine sulfate by dissolving it in aqueous 0.5 M H<sub>2</sub>SO<sub>4</sub> and a 5.1 x 10<sup>-5</sup> M DAPI (4',6-Diamidino-2-phenylindole) solution in dimethylsulfoxide (DMSO). Here the solutions are shown on a bar.  Low concentrations are prepared via dilution of higher concentration stock solution. The solution concentrations are chosen such that the absorbance values at the excitation wavelength are below 0.1. This is required for avoiding the inner filter effects. 
+</li><li>
+Carry out the absorption and fluorescence measurements of the solutions as follows.
+</li><li>
+To select a solution, click on the solution on the selection bar. First select DAPI solution. 
+</li><li>
+Click on the volumetric flask containing DAPI solution to take it to the instrument table. 
+</li><li>
+Click on the quartz cuvette (path length, 1 cm x1 cm) to take it to the instrument table. Quartz cuvettes for spectrophotometric measurements are transparent only on two opposite sides, unlike the all-side transparent quartz cuvettes used for fluorescence measurements.
+</li><li>
+Click on the 5 mL capacity pipette to collect 3 mL of the experimental solution which will be transferred into the quartz cuvette. In real operation, one has to set the volume to 3 mL in the  pipette and an appropriate tip should be attached prior to dipping it in the solution.
+</li><li>
+Click on the pipette to draw the solution into it.
+</li><li>
+Click on the pipette to take it out of the volumetric flask.
+</li><li>
+Click on the pipette again to transfer the solution into the cuvette.
+</li><li>
+To start the absorption spectral scan, click on the pop-up  Start Absorption Measurement .
+</li><li>
+Turn on the spectrophotometer clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.
+</li><li>
+Open the lid of the sample chamber of the spectrophotometer by clicking on the lid for placing the sample in the cell-holder. 
+</li><li>
+Click on the cuvette to place it in the sample holder. One has to use pure solvent as the sample blank or reference in this measurement. Here a double beam spectrophotometer is shown. 
+</li><li>
+Close the sample chamber lid by clicking on it.
+</li><li>
+Open the measurement set-up screen by clicking on the spectrophotometer icon on the computer monitor. 
+</li><li>
+On the screen, enter the wavelength range: Start: 600 nm; End: 290 nm. In real operation, the wavelength range of incident light for the sample is chosen and the wavelength scan is run via the accompanied computer software. One can run the scan in absorbance (A) or transmittance (%T) mode. 
+</li><li>
+Click on the green 'Start' button on the measurement set-up screen to run the wavelength scan. Observe the wavelength scan. 
+</li><li>
+Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data. 
+</li><li>
+To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette.
+</li><li>
+Close the sample chamber lid by clicking on it.
+</li><li>
+Click on the pop-up:  Start Fluorescence Measurement .
+</li><li>
+Turn on the spectrofluorimeter by clicking on the power button. In real operation, it takes approx. 30 min for initialization of the instrument.
+</li><li>
+Click on the spectrophotometric quartz cuvette to transfer its content into an all-side-transparent quartz cuvette of path length 1 cm x1 cm for the fluorescence measurement.
+</li><li>
+Run the Emission Spectral Scan of the sample on a spectrofluorimeter as follows.
+</li><li>
+To open the lid of the sample chamber of the spectrofluorimeter for placing the sample in the instrument, click on the lid.
+</li><li>
+To place the cuvette in the sample holder, click on the cuvette.
+</li><li>
+Click on the lid to close it.
+</li><li>
+Open the instrument set-up screen by clicking on the fluorescence measurement icon on the computer monitor. 
+</li><li>
+Select the Emission Scan Mode on the screen.
+</li><li>
+On the screen, enter the Excitation wavelength: 310 nm, Emission Start Wavelength: 320 nm and Emission End wavelength: 600 nm. One chooses the Excitation Slit(nm) and Emission Slit(nm) values (here 5 nm/5 nm) and the scan speed value (here  medium ) also. 
+</li><li>
+To run the wavelength scan for emission spectrum, click on 'OK' button on the set-up screen. One has to be sure that the solvent blank does not fluoresce in the wavelength range of interest. 
+</li><li>
+Click on 'Close' button when spectral scan is complete. In real operation, the scan data are stored in the computer. The instrument stores data and therefore asks for the Sample File name. One enters a file name to save the data. 
+</li><li>
+To take the cuvette out of the sample chamber, first click on the sample chamber lid to open it and then on the cuvette. 
+</li><li>
+Close the lid of the sample chamber by clicking on the lid.
+</li><li>
+Click on 'Reset' button to start over the measurements.
+</li><li>
+Repeat the Absorption and Emission measurements with the reference sample, quinine sulfate solution, by selecting it and then clicking on the volumetric flask containing quinine sulfate solution. For quinine sulfate: On the absorption measurement screen, enter the wavelength range: Start: 600 nm; End: 260 nm.
+</li><li>
+On the emission measurement screen, enter the Excitation wavelength: 310 nm, Emission Start Wavelength: 320 nm and Emission End wavelength: 600 nm.
+</li><li>
+Click on 'Reset' button to start over the measurements.
+</li><li>
+Collect all data by clicking on the Data tab.
+</li><li>
+Determine the area under the curves in two emission spectra. 
+</li><li>
+Calculate the fraction of light absorbed, f, from the absorbance (optical density) values at the excitation wavelength.
+</li><li>
+Determine the quantum yield of DAPI. (Refractive Index values of water and DMSO are 1.333 and 1.479 respectively)
+</li><li>
+	Compare your experimentally determined quantum yield of DAPI with the literature value (&&#934;<sub></sub>= 0.58). 
+</li><li>
+	Determine the quantum yield of DAPI by replacing the areas by the respective fluorescence intensities, F<sub>X</sub> and F<sub>R</sub> at a specific wavelength. Compare this value of quantum yield with the previous one determined from area calculation. Which method has smaller error?
+</li>
+</ol>
+    
+    </div>
+	
+      </section>
+      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+      <a href="" target="_blank">Click here to go to lab</a>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+
+<h3>
+Pre-Experiment
+</h3>
+
+<ol>
+<li>
+How can you explain the existence of a fluorescence quantum yield? 
+</li><li>
+The quantum yield of a fluorophore is 0.9. What will be the percentage of molecules in an excited electronic state that decay to ground state by fluorescence emission?
+</li><li>
+Why is the quantum yield of a fluorophore less than or equal to unity?
+</li><li>
+What is the quantum yield of a non-fluorescent compound?
+</li><li>
+Why does an increase in temperature decrease the fluorescence quantum yield? (Hint: Increase in the Brownian motions) 
+</li>
+    </ol>
+
+<h3>
+Post-Experiment
+</h3>
+
+<ol>
+<li>
+Which fluorophore will you choose   a high or low quantum yield one   in order 	to produce a higher relative emission intensity?
+</li><li>
+Which of the two fluorophores studied undergoes more non-radiative transitions? 
+</li><li>
+Why is it recommended to have low concentrations of fluorophore solution such that the absorbance value of the fluorophore is less than 0.1 at the excitation wavelength?
+</li><li>
+Mention a few common sources of errors in the relative quantum yield determination.
+</li>
+
+    </ol>
+
+
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+     <ol>
+            <li>
+	    M. M. Martin and L. Lindqvist, The pH Dependence of Fluorescein Fluorescence, Journal of Luminescence 1975, 10, 381. 
+	    </li><li>
+	    S. A. Barghouthi, J. Perrault and L. H. Holmes, Effect of Solvents on The Fluorescence Emission Spectra of 1-Anilino-8-Naphthalene Sulfonic Acid: A Physical Chemistry Experiment, Jr. The Chemical Educator, 1/Vol. 3, No. 5, http://journals.springer-ny.com/Chedr, 1998 Springer-Verlag New York, Inc. 
+	    </li><li>
+	    A. T. Rhys Williams,  S. A. Winfield and J. N. Miller, Analyst, 1983, 108, 1067.
+	    </li><li>
+	    Protocol for fluorescence quantum yield determination employed by Nanoco Technologies Ltd., www.nanocotechnologies.com.
+	    </li><li>
+	    J. R. Lakowicz, Principles of Fluorescence Spectroscopy, 2nd Ed., Kluwer Academic/Plenum Publishers, New York, London, Moscow, Dordrecht, 1999.
+	    </li><li>
+	    D. M. Jameson et al. in Basic Concepts in Fluorescence, Fluorescence: Basic Concepts, Principles Aspects and some Anecdotes, Methods Enzymol. 2003, 360, 1. 
+	    </li><li>
+	    http://omlc.ogi.edu/spectra/PhotochemCAD/index.html.
+	    </li><li>
+	    A. T. R. Williams, S. A. Winfield and J. N. Miller, Relative fluorescence quantum yields using a computer controlled luminescence spectrometer. Analyst, 1983, 108, 1067.
+
+            </li>
+        </ol>
+
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

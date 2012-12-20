@@ -1,0 +1,520 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="../index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Determination of the Molar Absorptivity of a Light Absorbing Molecule
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+
+	<p>
+	In addition to the optical path length and the concentrationof the absorbing species, the intensity of UV-Visible absorption band depends on the oscillator strength of the absorbing species. Oscillator strength of an absorbing species measures the allowedness of an electronic transition. It represents the strength of absorption relative to a completely allowed transition. Oscillator strength ~1 implies a completely allowed transition. The oscillator strength depends on the transition probability and the nature of the absorbing species. The oscillator strength is related to the absorptivity (formerly called the extinction coefficient) which can be easily determined experimentally. Thus absorptivity is a useful quantity giving us idea about the transition probabilities in the molecules and the effective light capture area (the cross-section for light absorption) of the species. Absorptivity is a characteristic of the absorbing substance under given conditions (wavelength, solvent and temperature). Experimentally molar absorptivity (ε) can be determined from absorbance measurements. The values of ε (M<sup>-1</sup>·cm<sup>-1</sup>) usually range from about 1 to 106. Very high values of ε indicate a favored (or, spin-allowed) transition: high intensity absorptions havevalues in the range 104-106 whereas absorptions with ε values in the range of 103-104 are termed as low intensity absorptions. For example, ε values can be over 10000 for the UVvisible pi– pi* transition in conjugated polyenes. Absorptions with ε values of 0 to 103 are less favored or <i>forbidden transitions</i>. For example, ε values less than 100 for the n –pi* absorption of ketones indicate that the transition is ‘forbidden’. If molar abosrptivity value is known, then concentration of an unknown solution of the absorbing species can be determined from its absorbance measurements (by applying Beer-Lambert Law). The molar absorptivity (ε) plays an important role in the quantitative determinations of an absorbing species. ε of the species to be determined must be reasonably large. For example, copper or cobalt in water as the aquo complex can be determined accurately down to about 1% since for such complexes ε ~10 m<sup>2</sup> mol<sup>-1</sup>. On the other hand, even a solution of about 0.5 ppm anthracene (C<sub>14</sub>H<sub>10</sub>) with a ε ~18 000 m<sup>2</sup> mol<sup>-1</sup> gives an absorbance of ~0.1 in a cell of 1 cm path length. 
+
+In this context it is worth noting that an <i>isosbestic point</i> is a wavelength at which the <i>molar absorptivity (ε)</i> is the same for two absorbing species that are interconvertible. Isosbestic points are used as reference points in many studies, since the absorbance at those wavelengths remains constant throughout the whole conversion process and its position is concentration independent.
+	</p>
+	 
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+		<p>
+			To determine the molar absorptivity of a light absorbing molecule
+		</p>	
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+<p>
+	Attenuation of light as it traverses an absorbing medium depends on the absorptivity of the substance, path length and the quantity of the absorbing substance. In order to find out their interrelationship, let us first derive the Beer-Lambert Law. Let us consider a thin slab of solution of thickness dx that contains dn light-absorbing molecules. Then
+</p>
+<p>	dn= c.Na.S.dx									(1)
+</p>
+<p>where c is the concentration (in mole per unit volume) of light absorbing molecule, N<sub>a</sub> is the Avogadro constant, and S is the cross-section of the incident beam.
+
+Each molecule is associated with a molecular absorption cross-section, σ, which measures the photon capture area of the molecule. (Remember that σ is function of wavelength,λ.)The total absorption cross-section of thethin layer is the sum of all molecular cross-sections, i.e. σ.dn.
+</p>
+<p>
+The probability of photon capture = σ.dn/S= fraction of light absorbed by the thin layer= -dI/I
+
+where small light intensity dI is absorbed from the incident light of intensity I.
+Therefore,
+</p>
+	<p>-dI/ I = σ.dn/S = σ. c. Na. dx 								(2)
+</p>
+<p>Rearrangement and integration, subject to the boundary condition I = I<sub>0</sub> at x = 0, yields:</p>
+
+<p>	ln(I<sub>0</sub>/I) = σ. c. Na. x									(3)
+</p>
+<p>where x is the thickness of the light absorbing sample (sample path length) and Io and I are the incident and transmitted intensities, respectively. This equation is the mathematical form of the Beer-Lambert Law. Following alternative form of the equation is generally used: </p>
+<p>
+
+		log10 (I<sub>0</sub>/I) = ε c x = <b>optical density (OD) or absorbance</b>				(4)
+</p>
+<p>where ε is the decadic molar extinction coefficient or molar absorptivity (in M–1 cm–1), c is the molar concentration (in mole/1000 cm3, M), and x is path length (in cm). 
+
+Comparison of equations 3 and 4 gives the relationship between the molar extinction coefficient, ε,(in M–1 cm–1) and the molecular cross-section for light absorption, σ (in cm<sup>2</sup>):
+</p>
+<p>	ε (in M<sup>–1</sup> cm<sup>–1</sup>) = <b>optical density (OD) or absorbance</b>							(5)</p>
+
+<p>or,	σ (in cm<sup>2</sup>) = 3.82 × 10-21. ε (in M<sup>–1</sup> cm<sup>–1</sup>).						(6)</p>
+<p>
+A knowledge of molar absorptivity helps to calculate the absorption cross-section of light absorbing compounds. For example, the molar absorptivities of anthracene are 160,000 and 6,300 M<sup>–1</sup> cm<sup>–1</sup> at wavelengths 253 nm and 375 nm, respectively. Thus one calculates cross-sections of 6.1 Å<sup>2</sup> and 0.24 Å<sup>2</sup>, for wavelengths 253 nm and 375 nm, respectively. If the molecular cross-section of anthracene is assumed to be 12 Å<sup>2</sup>, anthracene absorbs about 50% of the photons it encounters at 253 nm and 2% of the photons at 375 nm.
+</p>
+<p>
+ε<sub>max</sub>, the molar absorptivity at the spectral peak frequency (or, at the wavelength of maximum absorption), is often experimentally determined and quoted. The molar extinction coefficient,ε, is characteristic of the chromophore under given conditions (wavelength, solvent and temperature) and is a measure of the strength of electronic transition. The molar extinction coefficient is related to the <i>integral absorption coefficient</i> (α) which relates the experimental spectrum to a theoretical quantity known as the oscillator strength, <i>f<sub>nm</sub></i>. As absorption bands generally spread over a range of frequencies, the <i>integral absorption coefficient</i>, α = ∫bandε(ν)dν (in which integration is taken over the whole band frequency range), is a measure of the probability that an incident photon will be absorbed in a specific transition. The integral absorption coefficient is the sum of the absorption coefficients over the entire spectral band and corresponds to the area under the plot of the molar absorptivity, ε, against frequency. Therefore, α is easily calculated from the experimental spectral band. For a Lorentzian spectral band profile, the <i>integral absorption coefficient</i> is given by 
+</p>
+<p>	α = ½ π ε<sub>max</sub>Г										(7)</p>
+
+<p>where Γ is the full bandwidth at half of maximum (FWHM) absorbance. 
+
+The relationship between the <i>integral absorption coefficient</i> (α) and the oscillator strength, fnm, is given as follows:
+</p>
+	<p>fnm = 4.319 × 10<sup>-9</sup> mol.L<sup>-3</sup>.cm<sup>2</sup> × α = 4.319 × 10<sup>-9</sup> mol.L<sup>-3</sup>.cm<sup>2</sup> × (½ π ε<sub>max</sub> Г)	(8)</p>
+<p>
+f<sub>nm</sub> is a measure of the strength of an electric dipole transition (proportional to the square of the transition dipole moment μnm) between electronic states n and m with respect to that of a free electron oscillating in three dimensions. In other words, it represents the strength of absorption relative to a completely allowed transition.
+
+ε can be experimentally determined as follows. According to Beer–Lambert law,
+</p>
+<p>	log ( I<sub>0</sub>  / I) = A = ε c l									(9)</p>
+<p>
+where A = absorbance or optical density. 
+
+Since A vs. c is a straight line equation with slope = (ε.l) and zero intercept, molar absorptivity is best determined from the slope of a linear plot of absorbance versus concentration, called a calibration curve or calibration plot. Calibration graph is constructed by plotting absorbance at a given wavelength versus concentration for a series of standard solutions whose concentrations are accurately known. Since the absorptivity is a function of wavelength, often its value at the highest absorbance, ε<sub>max</sub> (at the peak position i.e., at the wavelength of maximum absorbance) is determined. One should note that the Beer–Lambert law is obeyed by many substances mainly at low to moderate concentrations; therefore, dilute concentrations of the absorbing species should be measured. Care must be taken to avoid any kind of chemical associations of the absorbing species.</p>
+</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+	<ol>
+<p>
+<li>
+Prepare an aqueous 1 x 10<sup>-3</sup> M 2-nitroaniline solution. Weigh out 0.0138 g of material and dissolve in 100 mL water. This is used as stock solution. 
+</li>
+<li>
+From the above stock solution, prepare five different concentrations of 2-nitroaniline solutions (for example, 0.0001 M, 0.00008 M, 0.00006 M, 0.00004 M, and 0.00002 M).
+</li>
+<li>
+Switch on the computer and the instrument powers; wait for 30 minutes for ‘warm-up’ of the instrument.
+</li>
+<li>
+One can select light sources (UV and visible), scan speed, %transmittance or absorbance display mode, wavelength range of interest, etc. in the instrument via a PC.
+</li>
+<li>
+Take two clean and dry quartz cuvettes with a given path length (here 1 cm).
+</li>
+<li>
+Fill up one cuvette with sample blank (distilled water in the present case) and the other cuvette with 2-nitroaniline solution. Begin with the lowest concentration. (Why?)
+</li>
+<li>
+Place the sample blank in the reference holder and the sample in the sample holder. 
+</li>
+<li>
+Run the absorption scan.
+</li>
+<li>
+Similarly spectral runs are done for all the other samples. Order of analysis should be from lower to higher concentration. Every time one should rinse (twice or thrice) the cuvette taking a small portion of the (solvent first and then the) solution to be measured.
+</li>
+<li>
+Click on the Data tab to collect all data.
+</li>
+<li>
+Plot absorbance vs. wavelength for all concentrations.
+</li>
+<li>
+Determine the wavelengths of maximum absorbance (λ<sub>max</sub>) and corresponding absorbance for each concentration and prepare a table containing these data.
+</li>
+<li>
+For each λ<sub>max</sub> divide the absorbance by the corresponding concentration and determine ε<sub>λ</sub> values (remember the path length = 1 cm). Then calculate average ε<sub>λ</sub>’s. 
+</li>
+<li>
+Construct calibration plots by plotting absorbance versus concentration for a given λ<sub>max</sub>. Thus one constructs three calibration plots for three peak positions of 2-nitroaniline. 
+</li>
+<li>
+Determine the slopes of the calibration plots and hence the respective ε<sub>λ</sub> values for three peak positions.
+</li>
+<li>
+Compare average ε<sub>λ</sub> values with the ε<sub>λ</sub> values determined from the calibration plots. 
+</li>
+<li>
+Calculate the molecular cross-sections for light absorption, σ (in cm<sup>2</sup>) and oscillator strengths,  f<sub>nm</sub>.
+</li>
+<li>
+Discuss your results. 
+</li>
+</p>
+	</ol>
+	</div>
+	
+      </section>
+      
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+  	<p>
+		<a href="media/5.html" target="_blank">Click here to go to lab</a><br>
+	</p>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+
+      <h3>Pre-experiment Quiz</h3>
+<p>
+      <ol>
+
+      <li>
+     What is a calibration curve?
+      </li>
+      <li>
+      If the concentration is expressed in mol.m<sup>-3</sup> and path length is expressed in meters, then what will be the units of ε? Relate it tothe units when the concentration is expressed in mol.L<sup>-1</sup> and path length is expressed in cm.
+      </li>
+      <li>
+     Why are the values of ε<sub>max</sub> are large for C=C-C=C containing molecules than C=O containing molecules?
+      </li>
+      <li>
+     For weakly ionized monoprotic acids, it is safe to use the wavelength corresponding to an isosbestic point for any measurement. Why?
+      </li>
+      <li>
+    Two solutions of two substances are showing the same color intensity, even though concentration of one substance is far below the concentration of the other. Why does it happen so? 
+      </li>
+ 
+</p>
+</ol>
+
+	<h3>Post-experiment Quiz</h3>
+	<p>
+	<ol>
+	<li>
+	What are main peak positions in aqueous 2-nitroaniline solutions? What are the origins of such peak positions?
+	</li>
+	<li>
+	Why are the absorbance values of a given concentration of 2-nitroaniline different for three different peak positions?
+	</li>
+	<li>
+	Out of three peaks, which peak was more intense and why?
+	</li>
+	<li>
+	How will a plot of ε versus wavelength be different from that of absorbance versus wavelength?
+	</li>
+	<li>
+	How are the two plots of εversus wavelength related for two different concentrations of a chromophore?
+	</li>
+	<li>
+	Does a compound with high molar absorptivity have a higher or lower limit of detection than a compound with low molar absorptivity?
+	</li>
+	</p>
+	</ol>
+</div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+    <ol>
+    <p>
+    <li>
+    B. Valeur, “Molecular Fluorescence: Principles and Applications”, 2002, WILEY-VCH Verlag GmbH, 69469, Weinheim, Germany.
+    </li>
+    <li>
+    J. R. Lakowicz, “Principles of Fluorescence Spectroscopy”, 2nd Ed., 1999, Kluwer Academic/Plenum Publishers, New York.
+    </li>
+    <li>
+    P. Atkins and J. De Paula,“Physical Chemistry”, W. H. Freeman & Company, Dec 2009. 
+    </li>
+    <li>
+    F. Rouessac and A. Rouessac, “Chemical Analysis: Modern Instrumentation Methods and Techniques”, Second Edition, 2007, John Wiley & Sons Ltd.
+    </li>
+    <li>
+    S. Beck, “Across the Spectrum: Instrumentation for UV/Vis Spectrophotometry”, The Scientist 12[3]:20, Feb. 02, 1998.
+    </li>
+    <li>
+    R. Sjöback, J. Nygren and M. Kubista,“Absorption and fluorescent properties of fluorescein” , SpectrochimicaActa Part A 51, L7 – L21(1995).
+    </li>
+    <li>
+    F. A. Settle (Editor), ‘Handbook of Instrumental Techniques for Analytical Chemistry”, Pearson Education Limited (2004). 
+    </li>
+    <li>
+   D. Harvey, “Modern Analytical Chemistry”, McGraw-Hill Education (2000).
+    </li>
+    <li>
+    T. Owen, “Fundamentals of modern UV-visible spectroscopy”, Primer, Agilent Technologies (2000). 
+    </li>
+    <li>
+	“Fundamentals of UV-visible spectroscopy: Workbook”, Publication Number 5980-1398E, a primer from Agilent Technologies (2000). 
+    </li>
+    </p>
+</ol>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+
+  </footer>
+
+</div>
+</body>
+</html>

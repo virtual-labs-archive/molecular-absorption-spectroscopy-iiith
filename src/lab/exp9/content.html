@@ -1,0 +1,451 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="../index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Effects of solution pH on the UV-visible absorption spectra
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+<p>
+We know that acid-base indicators change color depending on the pH of the solution. This property of indicators is used to locate equivalent point during acid-base titrations. We are familiar with many acid-base indicators, such as phenolphthalein, methyl orange, bromocresol green, etc. For example, phenolphthalein solution is colorless below pH 8.2 and pink in color above pH 10. Similarly, methyl orange indicator changes from red to (orange-) yellow color in pH range 3.1 – 4.4. Methyl orange is used to test whether a sample is highly acidic (< pH 3) or not. Potassium dichromate-chromate conversion is another well-known example showing pH-dependent color change. The equilibrium shifts towards dichromate ions in acid solution whereas mainly chromate ions form in basic solution.</p><p>
+Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> (<i>aq. </i>, orange) + 3H<sub>2</sub>O (<i>l</i>) ↔ 2CrO<sub>4</sub><sup>2-</sup> (<i>aq. </i>, yellow) + 2H<sub>3</sub>O<sup>+</sup> (<i>aq. </i>)</p><p>
+These examples demonstrate how the colors of many substances depend on the pH of the solution. We have chosen here methyl orange as an example to demonstrate the effect of pH on the absorption spectra. Methyl orange and other acid-base indicators exhibit one or more pH-dependent ionic equilibriums. The dissociation equilibrium constants for such compounds can be determined by monitoring the pH-dependent color changes. Such spectroscopic determinations are especially useful in cases of small sample quantity or poor sample solubility. The knowledge of dissociation equilibrium constants of weak acids and weak bases is very useful in chemical, biochemical and pharmaceutical sciences. 
+
+</p>
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+<p>
+To (i) study the effects of pH of the solution on the UV-visible absorption spectra,and <br>
+(ii) determine the <i>pK<sub>a</sub></i> value of a weak acid.
+ 
+</p>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Theory
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+<p>
+If a molecule has an acid/base character, change in the pH of the solution may have an important effect on the absorption spectra of the molecule. The pH or H<sup>+</sup> ion concentration affects the conjugate acid-base pair chemical equilibriums. Thus pH change in a solution can lead to the change in the number and kinds of species (molecules or ions) present in a solution. Let us take example of methyl orange. Methyl orange is an azo dye (R N=N Rꞌ) (Figure 1) where electrons from N=N double bond and neighboring aryl groups constitute the chromophore that causes yellow color. Methyl orange acts as a weak base and gets protonated in highly acidic solution. The proton binds to one of the nitrogen in the N=N double bond which breaks the double bond. This leads to the electron/bond arrangement in the molecule. Thus, the molecular structure and the chromophore of the standard methyl orange change in acidic medium which give rise to red color in the solution. </p><p>
+<img src=./images/docpix1.jpg> </p><p>
+For convenience let us represent methyl orange as “In” and write the above ionic equilibrium as follows: </p><p>
+
+<img src=./images/docpix2.jpg>
+</p><p>
+where <i>K<sub>a</sub></i> is the acid dissociation constant. Acid-base indicators which are weak acids or bases do not undergo complete dissociation and exhibit this kind of dissociation equilibrium. The equilibrium can be driven backward or forward by varying the H<sub>3</sub>O<sup>+</sup> ion concentration in the solution. </p><p>
+In practice, pH and pK<sub>a</sub> are often used in place of the H<sub>3</sub>O<sup>+</sup> ion concentration and K<sub>a</sub> respectively. Therefore, by taking negative of logarithm, one can write from equation (1), </p><p>
+pK<sub>a</sub> = pH – log ([In]/[InH<sup>+</sup>]) 							(2) </p><p>
+or, 	pH = pK<sub>a</sub> + log ([In]/[InH+]) 							(3) </p><p>
+where ‘[ ]’ represents the concentration of the enclosed species. Eq (3) suggests that p K<sub>a</sub> value can be calculated if the concentrations of conjugate acid and base pair at a given pH are known. Mathematically eq. (3) is a straight line equation (y= c + mx) with intercept = pK<sub>a</sub> if pH is plotted against log ([In]/[InH+]). In other words, when log ([In]/[InH+]) = 0, i.e., at [In] = [InH+],  pH = pK<sub>a</sub>. Thus, pK<sub>a</sub> is conveniently determined graphically by determining the ratio [In]/[InH+] as a function pH (Figure 2). 
+</p><p>
+
+
+
+
+<img src=./images/docpix3.jpg>
+</p><p>
+Both the standard and protonated forms of methyl orange are colored species; therefore their concentrations can be conveniently determined by measuring the absorbances at their wavelengths of maximum absorptions with the help of a spectrophotometer. This allows spectrophotometric determination of pK<sub>a</sub> in the case of methyl orange. According to the Beer-Lambert Law, the amount of light absorbed by a solute at a given wavelength is proportional to its molar concentration: </p><p>
+<i>A = &epsilon;cl</i>, 	where A = absorbance, &epsilon; = molar absorptivity (a constant) characteristic of the absorbing molecule, l = path length of light absorption, c = concentration of the light absorbing molecule. In a mixture, the absorbance of two absorbing species, InH<sup>+</sup> and In, at a particular wavelength is the sum of the absorbances of InH<sup>+</sup> and In at that wavelength. The concentrations of InH<sup>+</sup> and In in the mixture can be determined by measuring the absorbance of the mixture at two different wavelengths (say, &lambda;<sub>1</sub> and &lambda;<sub>2</sub>) and by obtaining the molar absorptivities (via calibration curves) for both components at both wavelengths. Generally, the wavelengths are chosen so that the ratios between the absorbances of the two species, A<sub>InH<sup>+</sup></sub>/A<sub>In</sub>, are maximized and minimized. Thus one can construct two independent equations containing two unknowns, [InH<sup>+</sup>] and [In]. </p><p>
+A(&lambda;<sub>1</sub>) = A<sub>InH<sup>+</sup></sub> (&lambda;1) + A<sub>In</sub> (&lambda;1) = &epsilon;<sub>InH<sup>+</sup> (&lambda;1) </sub> [InH+] + &epsilon;<sub>In(&lambda;1) </sub> [In]			(4)
+</p><p>
+A(&lambda;<sub>2</sub>) = A<sub>InH<sup>+</sup></sub> (&lambda;2) + A<sub>In</sub> (&lambda;2) = &epsilon;<sub>InH<sup>+</sup> (&lambda;2) </sub> [InH+] + &epsilon;<sub>In(&lambda;2) </sub> [In]			(5)
+</p><p>
+where &epsilon;<sub>InH<sup>+</sup> (&lambda;i)</sub> and &epsilon;<sub>In(&lambda;i)</sub> are the molar absorptivities of InH<sup>+</sup> and In, respectively, at &lambda;<sub>i</sub> for unit path length. One can determine [InH<sup>+</sup>] and [In] by solving the above two equations. However, to use this method one requires multi-wavelength absorbance measurements at different pH values for mixture as well as for individual species. This method is especially required if acid-base equilibriums comprise more than two ionization steps. Multi-wavelength absorbance measurements for mixture and individual species can be avoided for systems having single ionization step as in eq. (1).
+</p><p>
+Examination of eq. (3) shows that one requires to determine the ratio [In]/[InH<sup>+</sup>] as a function pH, not the individual species concentration. Since constant quantity of methyl orange indicator is used at all pH values, the total concentration of indicator is given by C<sub>T</sub> = [In] <sub>b</sub> = [InH<sup>+</sup>]<sub>a</sub> = [In] + [InH<sup>+</sup>], where [In] <sub>b</sub> = concentration of only In (base form of indicator) present at high pH, and [InH<sup>+</sup>]<sub>a</sub>= concentration of only InH<sup>+</sup> (acid form of indicator) present at low pH. The relative quantities of In and InH<sup>+</sup> varies between the above two extremes depending on the pH of the solution. If one measures the absorbance values for the two extreme conditions (for [In]<sub>b</sub> and [InH<sup>+</sup>]<sub>a</sub>) at a given wavelength, all other absorbance values lie between them. This allows one to determine the relative amount of each species present at all pH values. The best choice for the wavelength of absorbance measurement is that which has the largest difference in absorbance for the two species. In the case of methyl orange indicator system, the wavelength at which this is observed is &lambda;<sub>max </sub>for InH<sup>+</sup> (say, <sup>InH<sup>+</sup></sup>&lambda;<sub>max</sub> ≈ 510 nm). Suppose at this <sup>InH<sup>+</sup></sup>&lambda;<sub>max</sub>:
+</p><p>
+A<sub>a</sub> = absorbance for [InH<sup>+</sup>]<sub>a</sub></p><p>
+A<sub>b</sub> = absorbance for [In] <sub>b</sub></p><p>
+A = absorbance for any intermediate pH values</p><p>
+
+Under these conditions, </p><p>
+
+	A = A<sub>a</sub>× [InH<sup>+</sup>]/C<sub>T</sub> + A<sub>b</sub>× [In]/C<sub>T</sub>						(6) </p><p>
+
+
+The above relationship can be rearranged to find the ratio, [In]/[InH<sup>+</sup>], at <sup>InH<sup>+</sup></sup>&lambda;<sub>max</sub> as follows: </p><p>
+
+	[In]/[InH<sup>+</sup>] = (A<sub>a</sub> –A)/(A – A<sub>b</sub>)						(7) </p><p>
+
+Therefore, the experiment turns out to be adjusting [H<sub>3</sub>O<sup>+</sup>] or pH to known values including two extremes and measuring corresponding absorbance values for determining the ratio [In]/[InH<sup>+</sup>] spectrophotometrically. The pH of the experimental solutions is commonly varied by using a buffer system. Disodium hydrogen orthophosphate (Na<sub>2</sub>HPO<sub>4</sub>)-citric acid buffer system can be used for methyl orange indicator system. Ideally, the buffer components should not absorb any light in the wavelength range of interest. The following points should be noted. The relative concentrations of buffer components control the solution pH and the solution pH controls the relative concentrations of indicator species, InH<sup>+</sup> and In. The dissociation equilibrium constant (<i>K<sub>a</sub></i>) measured in the present spectrophotometric method is “concentration equilibrium constant”, because concentrations instead of “activity” terms are used for the determinations. K<sub>a</sub> and hence pK<sub>a</sub> values, like other equilibrium constants, are temperature dependent.
+ 
+</p>
+
+
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="../images/procedure.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Procedure
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+<p>
+<ol>
+<li>Prepare the following solutions: (i) a 0.5g/L methyl orange solution by dissolving 0.05 g methyl orange in 100 mL distilled water; (ii) a 0.2 M disodium hydrogen orthophosphate (Na<sub>2</sub>HPO<sub>4</sub>) solution by dissolving 5.68 g Na<sub>2</sub>HPO<sub>4</sub> in 200 mL distilled water; and (iii) a 0.1 M citric acid solution by dissolving 9.61 g citric acid in 500 mL distilled water.
+</li><li>Prepare eight buffer solutions by mixing varying amounts of the Na<sub>2</sub>HPO<sub>4</sub> solution and the citric acid solution as given in Table 1.
+</li><li>Divide each buffer solution into two equal portions of 25 mL volume.
+</li><li>Add 0.5 mL of methyl orange solution to one 25 mL portion of each buffer solution. Absorbance measurements of the buffer solutions containing the methyl orange indicator have to be carried out against the other portions of buffer as the reference or sample blank. These sample solutions are shown on a selection scale. 
+</li><li>Switch on the computer and the instrument powers; wait for 30 minutes for ‘warm-up’ of the instrument.
+</li><li>In the instrument one can select light sources (UV and visible), choose the slit width, scan speed and %transmittance or absorbance display, wavelength range of interest, etc.
+</li><li>Take a clean and dry or properly rinsedquartz cuvette with a given path length (say, 1 cm).
+</li><li>Fill up one cuvette with sample blank (pure buffer solution) and the other cuvette with corresponding buffer solution containing methyl orange solution.
+</li><li>Place the sample blank in the reference holder and the sample in the sample holder.
+</li><li>Run the scan (A versus &lambda;) for each samplein the wavelength range from 300 to 650 nm.
+</li><li>Now find out the wavelengths of maximum absorbance (&lambda;<sub>max</sub>), corresponding absorbance, the absorbance at <sup>InH<sup>+</sup></sup>&lambda;<sub>max</sub> for all the pH values and make a table containing these data (Table 2).
+</li><li>Discuss how &lambda;<sub>max</sub> and corresponding absorbance vary with pH of the solution.
+</li><li>Calculate pK<sub>a</sub> for each pH value. Find the average pK<sub>a</sub>.
+</li><li>Plot pH vs. log([In]/[InH<sup>+</sup>]). Determine pK<sub>a</sub> from the intersection of the line with the pH axis.
+</li><li>Compare the graphically determined pK<sub>a</sub> value with the calculated average pK<sub>a</sub> value.
+</li><li>Determine the acid dissociation constant, K<sub>a</sub> for methyl orange.</li> </ol> </p>
+</ol>
+
+<img src=./images/docpix4.jpg>
+<img src=./images/docpix5.jpg>
+</p>
+</div>
+</section>
+
+  
+ <section id="lab-article-section-5">
+
+      <div id="lab-article-section-5-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/experiment.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-5-heading" class="heading">
+      Simulator
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-5-content" class="content">
+		<p>
+			<a href="./media/9.html" target="_blank">Click here to go to lab</a>
+		</p>
+      </div>
+
+      </section>
+
+ <section id="lab-article-section-6">
+
+      <div id="lab-article-section-6-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+	  <img src="../images/quiz.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-6-heading" class="heading">
+      Quiz
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-6-content" class="content">
+<h3>
+Pre-Experiment
+</h3>
+<p align="justify">
+<ol>
+   <li>Which states (ground vs. excited) of the chromophore for the transitions will have higher dipole moment and hence more solvated?
+</li><li>Why are K<sub>a</sub> (acid dissociation constant) values expressed as pK<sub>a</sub> like the hydrogen concentration in pH? (Hint: power scale because K<sub>a</sub> values range over many orders of magnitude) 
+</li><li>Write the acid dissociation equation for a diprotic acid and express it in terms of pK<sub>a</sub> and pH. Under what conditions will pK<sub>a</sub> be equal to pH?
+</li><li>Are all weak acids or bases indicators?
+</li><li>Do all indicators change color at pH 7.0? Justify your answer.
+</li><li>Explain how one obtains: A = A<sub>a</sub>× [InH<sup>+</sup>]/C<sub>T</sub> + A<sub>b</sub>× [In]/C<sub>T</sub> as given in eq. (6).
+</li><li>Show that: [In]/[InH<sup>+</sup>] = (A<sub>a</sub> –A)/(A – A<sub>b</sub>)
+</li><li>Find the difference between pK<sub>a</sub> and pH values, when 50% of a drug (which is a weak acid) is ionized.
+</li>
+
+        
+    </ol>
+</p>
+<h3>
+Post-Experiment
+</h3>
+<p>
+<ol>
+<li>Can one use methyl orange indicator for any acid-base titrations? Justify your answer.
+</li><li>What is the origin of color change in methyl orange during the pH change in solution?
+</li><li>Identify the species InH<sup>+</sup> for methyl orange. 
+</li><li>What will be the color of methyl orange indicator in pH range 3.1– 4.4 and why? (Hint: color related to indicator name.)
+</li><li>What is the color of the methyl orange solution at pH=10? 
+</li><li>Why is it necessary to have two extreme pH values about two units higher or lower than the pK<sub>a</sub> of an acid (i.e., extreme pH = pK<sub>a</sub> ± 2)? Calculate the % of conjugate base of the acid under these conditions of extreme pH values. 
+</li><li>What is the slope of the plot of pH vs. log of the ratio [In]/[InH<sup>+</sup>]?
+</li><li>Which species of methyl orange – standard methyl orange or its conjugate acid – has higher molar extinction coefficient? How did you infer it?
+</li><li>How can you relate the wavelengths of maximum absorbance to the colors observed for standard methyl orange and its conjugate acid? </li><li> At what pH of methyl orange solution would equal amounts of the acidic and basic forms be present?
+</li><li>Are there any wavelengths at which the absorbance of methyl orange does not change with pH variation?
+</li><li>How will the pH of the buffer solutions be affected due to the dilution caused by the addition of the indicator solution to the buffer solution?
+</li>
+       
+</ol>
+</p>
+      </div>
+
+      </section>
+<section id="lab-article-section-7">
+
+      <div id="lab-article-section-7-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+<img id="feedback" src="../images/references.jpg" />
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-7-heading" class="heading">
+      References
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-7-content" class="content">
+<p>
+<ol>
+<li>http://en.wikipedia.org/wiki/Fluorescein
+</li><li>http://infohost.nmt.edu/~jaltig/Diazo.pdf
+</li><li> “Fundamentals of UV-visible spectroscopy: Workbook”, Publication Number 5980-1398E, a primer from Agilent Technologies (2000).
+</li><li>B. Valeur, “Molecular Fluorescence: Principles and Applications”, 2002, WILEY-VCH Verlag GmbH, 69469, Weinheim, Germany.
+</li><li>J. R. Lakowicz, “Principles of Fluorescence Spectroscopy”, 2nd Ed., 1999, Kluwer Academic/Plenum Publishers, New York.
+</li><li>P. Atkins and J. De Paula, “Physical Chemistry”, W. H. Freeman &amp; Company, Dec 2009. 
+</li><li>F. Rouessac and A. Rouessac, “Chemical Analysis: Modern Instrumentation Methods and Techniques”, Second Edition, 2007, John Wiley & Sons Ltd.
+</li><li>S. Beck, “Across the Spectrum: Instrumentation for UV/Vis Spectrophotometry”, The Scientist 12[3]:20, Feb. 02, 1998.
+</li><li>R. Sjöback, J. Nygren and M. Kubista, “Absorption and fluorescent properties of fluorescein”, Spectrochimica Acta Part A 51, L7 – L21(1995).
+</li><li>F. A. Settle (Editor), ‘Handbook of Instrumental Techniques for Analytical Chemistry”, Pearson Education Limited (2004). 
+</li><li>D. Harvey, “Modern Analytical Chemistry”, McGraw-Hill Education (2000).
+</li><li>T. Owen, “Fundamentals of modern UV-visible spectroscopy”, Primer, Agilent Technologies (2000).
+</li>
+
+        </ol>
+<p>
+      </div>
+
+      </section>
+      
+      <section id="lab-article-section-99">
+
+      <div id="lab-article-section-99-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="../?q=experiments"><img src="../images/experiments.jpg" /><p></p>Experiments</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-99-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-99-content" class="content">
+      </div>
+      </section>
+      
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb02"><img id="feedback" src="../images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-100-content" class="content">
+      </div>
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

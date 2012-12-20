@@ -1,0 +1,379 @@
+<!-- This file needs to be edited by the lab developer to suit
+their lab rquirements. -->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABSORPTION SPECTROSCOPY VIRTUAL LAB</title>
+</head>
+
+<body>
+
+<div id="lab"> <!-- The Lab Document Container-->
+  
+  <!-- The lab Header contains the logo and the name of the lab, 
+  usually displayed on the top of the page-->
+
+  <header id="lab-header">
+    
+    <div id="experiment-header-logo" class="logo">
+	<!-- Enclose the logo image of your lab or write it in 
+	text-->
+
+		<a href="http://virtual-labs.ac.in/"><div class="imagemap">
+			<img src="http://virtual-labs.ac.in/images/virtualLabsLogo.jpg" alt="" usemap="#logos" />
+
+	
+			<map name="logos">
+			
+				<area shape="rect" coords="0,0,505,98" href="http://www.vlab.co.in/" title="Vlab" alt="Vlab" />
+				<area shape="rect" coords="734,0,1022,97" href="http://www.iiit.ac.in/" title="IIIT" alt="IIIT" />
+			
+				<area shape="default" nohref="nohref" title="Default" alt="Default"/>
+			</map>
+
+			</div>
+	      
+	     </a>
+	</div>
+
+    <div id="lab-header-heading" class="heading">
+    <!-- Write the name of your lab and link it to the home page
+    of your lab. -->
+      <a href="index.html">ABSORPTION SPECTROSCOPY VIRTUAL LAB</a>	
+    </div>
+
+    <!-- Add any additional element or link you want to add to 
+    the lab header, For example : Help (Enclosing them with 
+    suitable div is recommended)-->
+  
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="lab-article">
+
+
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+    <header id="lab-article-header">
+      
+      <!-- You can add a welcome message or title of the 
+      experiment enclosed in h1 tag here -->
+      <div id="lab-article-heading" class="heading">
+        Absorption Spectroscopy Virtual Lab
+      </div>
+
+      <!-- Add any additional element if required with proper 
+      enclosing-->
+    </header>
+
+
+    <!-- Navigation menu is useful to organize the view of 
+    multiple sections inside the article-->
+    <nav id="lab-article-navigation">
+    <ul id="lab-article-navigation-menu">
+      <!-- The menu will be dynamically generated to contain the 
+      headings of your sections or instead write the menu items 
+      of your choice individually enclosed in <li> tag as shown 
+      below-->
+    </ul>
+    </nav>
+
+    
+    <!-- All the sections of your lab or experiment can be 
+    enclosed together with a div element as shown below-->
+    <div id="lab-article-sections">
+			
+      <!-- First section of the article-->
+      <section id="lab-article-section-1">
+        <div id="lab-article-section-1-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/introduction.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+	<div id="lab-article-section-1-heading" class="heading">
+	Introduction
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+	<div id="lab-article-section-1-content" class="content">
+	<p>
+This lab is about molecular absorption spectroscopy. Spectroscopy is an essential tool for physical scientists and is included in many UG and PG curricula. Spectroscopy uses the absorption, emission, or scattering of electromagnetic radiation by atoms, molecules or their ions, is employed to study these species and many physical processes. Various kinds of molecular spectroscopic techniques, such as UV-Vis (absorption) spectroscopy, fluorescence (emission) spectrometry, CD/ORD spectroscopy, infrared spectroscopy, Raman spectroscopy, NMR spectroscopy, mass spectrometry etc. are used. All methods except mass spectrometry are based on electronic radiation. Depending on the wavelength of interaction, we get information about different parts of molecules, for example, UV-Vis and Fluorescence spectroscopies --- &quot electronic structure &quot, Infrared and Raman spectroscopies --- &quot vibrations and/or rotations &quot , CD/ORD spectroscopy --- &quot chirality &quot, etc. Absorption spectroscopy involves the transfer of energy from the radiation field to the atom or molecule. In other words, it involves the measurement of the wavelength and intensity of absorption of light by a sample. </p> <p>
+UV-visible absorption spectroscopy is used in identifications of many types of organic and inorganics molecules and ions, quantitative determinations of many biological, organic, and inorganic species, determinations of equilibrium constants, determinations of stoichiometry of chemical reactions, monitoring of reaction rates, etc.</p>
+<p>
+<b>Terms:</b> <br>
+<b>Wavelength (λ):</b>  Crest-to-crest distance between waves. <br>
+<b>Frequency (ν):</b>  Number of complete oscillations that the wave makes each second (units:  number of oscillations/sec or s-1 or Hertz (Hz).<br>
+<b>Light speed:</b>  	in vacuum: 		c = 2.998 x 108 m s-1<br>	
+			in other media:  	c/n  (n = refractive index, generally &gt 1; n = 1 for vacuum, 						<br>
+					n= 1.0002926 in air). <br>
+					<p>c/n = ν λ</p><br>
+<p>The relationship between energy and frequency is given as follows:<br></p>
+<p>E = hν = hc/λ  = hcῡ</p><br><p>
+h = Planck’s constant (6.626 x 10-34 J s and ῡ= wavenumber (most common unit is cm-1)<br>
+Energy is proportional to the frequency or wavenumber but inversely proportional to the wavelength. <br>
+<b>Spectrum:</b>  A plot of intensity vs. frequency, wavelength or wavenumber.<br>
+We see often the UV/Vis spectra as spectral bands in polar solvents like water.  One can observe electronic fine structure in some solvents or vibrational transitions in gas phase spectra. <br>
+	</p>
+	<img src="images/Picture1.jpg" alt="Content picture" style="height:700px"/>
+	<p>
+Photons of electromagnetic radiation of different energies (frequencies or wavelengths) interact with molecules in a variety of ways:
+<ol>
+<li> X-rays can excite and eject inner shell electrons, causing ionization and bond fragmentation. </li>
+<li> Ultraviolet (UV) radiation causes high energy electronic transitions and visible radiation induces low energy electronic transitions in molecules. The resulting excited states may relax via bond breakage or various radiative and non-radiative pathways. </li>
+<li> Infrared (IR) radiation causes vibrations in molecular bonds, such as bond stretching, bond bending etc. Therefore, IR spectroscopy is often called vibrational spectroscopy.</li>
+<li> Microwaves can cause the molecules to rotate in the gas phase. This is the subject matter of microwave or rotational spectroscopy.</li>
+<li> Radio waves can induce resonance of atomic nuclei rotation in a strong magnetic field. This is the subject of nuclear magnetic resonance (NMR) spectroscopy.</li></ol>
+</p>
+<p>
+<b> Chromophores: </b>Functional groups that participate in electronic transitions. </br>
+<b> Auxochromes: </b>Substituents with unshared pair of electrons (e.g., -OH, -NH2, -SH, etc.). When such substituents are attached to π bond containing chromophores, they generally move the absorption max. (λmax) to longer wavelength, λ.</br>
+<b> Bathochromic Shift (Red shift): </b>A shift of λmax to longer wavelength, λ (lower energy).</br>
+<b> Hypsochromic Shift (Blue shift): </b>A shift of λmax to shorter wavelength, λ (higher energy). </br>
+<b> Hyperchromism: </b>An increase in intensity of a spectral band. </br>
+<b> Hypochromism: </b>A decrease in intensity of a spectral band.</br>
+In Absorption Spectroscopy (UV-Visible), Hyperchromic shift means an increase in Absorbance (extinction coefficient, ε) and Hypochromic shift means a decrease in Absorbance (extinction coefficient, ε).
+</p>
+<p><b>Relevant Topics</b>
+Properties of light; Molecular electronic structures; Interaction of photons with molecules; Electronic transitions, Beer-Lambert law. </p>
+
+	</div>
+	
+      </section>
+		
+
+      <!-- Second section of the article-->
+      <section id="lab-article-section-2">
+        
+        <div id="lab-article-section-2-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/experiments.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-2-heading" class="heading">
+	  Experiments
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-2-content" class="content">
+	 <ol class="experiment-list">
+				<li class="experiment-thumb">
+					<a href="exp1/index.html">
+						<strong>Familiarization with the UV-Visible Absorption Spectroscopy:</strong>
+					</a>
+					<ul type="disc">
+					<strong>
+					<a href="exp1/media/Principle.html">
+						<li> Principles of UV-visible absorption spectroscopy: Electronic excitation/transition and light absorption </li>
+					</a>
+					<a href="exp1/media/instrument_animation.html">
+						<li> The working principles of a UV-visible spectrophotometer: Instrumentation </li>
+					</a>
+					<a href="exp1/media/1.html">
+						<li> Absorption (and transmittance) measurements of a colourless and a coloured light absorbing substance in a solution by using a spectrophotometer </li>
+					</a>
+					</ul>
+					</a>
+					</strong>
+				</li>
+				<li class="experiment-thumb">
+					<a href="exp2/index.html">
+						<strong>Solvent effects on absorption spectra</strong>
+					</a>
+					</strong>
+				</li> 
+				<li class="experiment-thumb">
+					<a href="exp3">
+						<strong>Effects of sample path length</strong>
+					</a>
+				</li> 
+				<li class="experiment-thumb">
+					<a href="exp4">
+						<strong>Effects of sample concentration</strong>
+					</a>
+				</li> 
+		
+				<li class="experiment-thumb">
+					<a href="exp5/index.html">
+						<strong>Determination of molar absorptivity</strong>
+					</a>
+				</li>
+				<li class="experiment-thumb">
+					<a href="exp6">
+						<strong>Verification of Beer-Lambert Law</strong>
+					</a>
+				</li> 
+				<li class="experiment-thumb">
+					<a href="exp7">
+						<strong>Determination of unknown concentration of a light absorbing analyte</strong>
+				</li> 
+				<li class="experiment-thumb">
+					<a href="exp8">
+						<strong>Simultaneous estimation method for multicomponent samples: Principle of additivity of absorbance</strong>
+					</a>
+				</li> 
+				<li class="experiment-thumb">
+					<a href="exp9">
+						<strong>pH effects on absorption spectra: pKa determination by spectrophotometric method</strong>
+					</a>
+				</li> 
+				<li class="experiment-thumb">
+					<a href="exp10">
+						<strong>Study of kinetics of a reaction by using spectrophotometric method</strong>
+					</a>
+				</li> 
+				
+			</ol>
+	</div>
+	
+      </section>
+
+
+	 <!-- Second section of the article-->
+      <section id="lab-article-section-3">
+        
+        <div id="lab-article-section-3-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/target_audience.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-3-heading" class="heading">
+	 Target Audience
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-3-content" class="content">
+	<ul>
+<li>UG</li>
+<ul>
+<li>-Engineering Chemistry 1st year B. Tech. in Chemical / Materials / IT / Civil / Mech. / Electrical / Textile / Agricultural Engg....</li>
+<li>-B. Pharm., Biotech., Biomed. Engg.</li>
+<li>-B. Sc. (Hons.) in Chemistry/Phys./Biol./Biophys.</li>
+</ul>
+
+<li>PG</li>
+<ul>
+<li>-Chemistry, Chemical/Materials/Biomedical Engg., Biotech & Pharm.</li>
+<li>-Ph. D. Beginners</li>
+</ul>
+</ul>
+	</div>
+	
+      </section>
+
+	<section id="lab-article-section-4">
+        
+        <div id="lab-article-section-4-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/objective.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-4-heading" class="heading">
+	 Objective
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-4-content" class="content">
+	<p>
+This lab aims at demonstrating how to design absorption measurements in a spectrophotometer and how to use absorption spectroscopy as an analytical tool.
+</p>
+	</div>
+	
+      </section>
+	<section id="lab-article-section-5">
+        
+        <div id="lab-article-section-5-icon" class="icon">
+          <!-- Enclose the icon image for the section. -->
+	  <img src="images/courses_aligned.jpg" />
+	</div>
+
+
+        <!-- The heading for the section can be enclosed in a 
+        div tag and shown with a <h2> tag -->
+	<div id="lab-article-section-5-heading" class="heading">
+	 Courses Aligned
+	</div>
+				
+	<!-- Write the section content inside a paragraph 
+        element, You can also include images with <img> tag -->
+        <div id="lab-article-section-5-content" class="content">
+	<p>
+ Physical and Analytical Chemistry of molecular absorption spectroscopy and their applications.
+</p>
+	</div>
+	
+      </section>
+
+      <section id="lab-article-section-100">
+
+      <div id="lab-article-section-100-icon" class="icon">
+      <!-- Enclose the icon image for the section. -->
+     <a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb03"><img id="feedback" src="images/feedback.jpg" /><p></p>Feedback</a>
+      </div>
+
+
+      <!-- The heading for the section can be enclosed in a 
+      div tag and shown with a <h2> tag -->
+      <div id="lab-article-section-100-heading" class="heading">
+      </div>
+
+      <!-- Write the section content inside a paragraph 
+      element, You can also include images with <img> tag -->
+      <div id="lab-article-section-2-content" class="content">
+      </div>
+
+      </section>
+
+
+      </div>	
+
+      <!-- An article can have a sidebar that contain related 
+      links and additional material (it is optional at this 
+      moment)-->
+      <aside id="lab-article-sidebar" class="default">
+	<!-- put the content that you want to appear in the 
+        sidebar-->	
+      </aside>
+		
+      <!-- Article footer can display related content and 
+      additional links -->						
+      <footer id="lab-article-footer" class="default">
+	<!-- Put the content that you want to appear here-->
+      </footer>
+
+    </article>
+	
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>
+</body>
+</html>

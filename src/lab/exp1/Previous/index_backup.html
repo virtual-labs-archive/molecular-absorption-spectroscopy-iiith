@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="eng">
+<head>
+	<meta http-eqiv="content-Type" content="text/html;charset=utf-8"/>
+	<title> Virtual Labs | experiments </title>
+
+	<link href="../css/common.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type='text/javascript' src='../js/jquery-1.4.2.min.js'></script>
+	<script type='text/javascript' src='../../MathJax/MathJax.js'> </script>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			$('#main-title').load('content.html h1#main-title', function() 
+				{
+					//alert('load successful');
+				});
+
+			$('#hidden-content').load('content.html', function(response,status,xhr) 
+				{
+					$("#hidden-content > div").each(function() 
+					{
+						sectionId = $(this).attr('id');
+						
+						//alert(sectionId);
+						
+							
+						headerId = $("#" + sectionId + " h2").html();
+							
+						$("#head-nav ul").append("<li> <a href=\'#\' id=\'"+ sectionId + "-menu\'>" + headerId + "</a> </li>");				
+					
+					});
+					
+					$("#left-content").html($("#hidden-content div:first").html());
+					
+					$("#head-nav ul > li a").click(function() 
+					{	
+						menuId = $(this).attr('id'); // this points to the current element
+						
+						if(menuId=="back-menu")
+						{
+							//alert("working");
+							//alert('Handler for .click() called.');
+						
+							
+							
+								
+							$("#head-nav ul").replaceWith("<ul></ul>");	
+							
+							$('#main-title').load('http://pascal.iiit.ac.in/ccnsb/colloid-system/content.html h1#main-title');
+													
+							
+							$('#hidden-content').load('http://pascal.iiit.ac.in/ccnsb/colloid-system/content.html', function(response,status,xhr) 
+							{
+								$("#hidden-content > div").each(function() 
+								{
+									sectionId = $(this).attr('id');
+									headerId = $("#" + sectionId + " h2").html();
+									
+									$("#head-nav ul").append("<li> <a href=\'#\' id=\'"+ sectionId + "-menu\'>" + headerId + "</a> </li>");
+								});
+								$("#left-content").html($("#hidden-content div:first").html());
+								$("#head-nav ul > li a").click(function() 
+								{
+								menuId = $(this).attr('id'); // this points to the current element
+								sectionId = menuId.replace(/-menu/i, "");
+								sectionContent = $("#hidden-content div#" + sectionId).html();
+								$("#left-content").html(sectionContent);
+							});
+							
+							$('#left-content').load('http://pascal.iiit.ac.in/ccnsb/colloid-system/content.html #experiments', function() 
+							{
+							//alert('load successful');
+							});
+							
+							
+							
+							});		
+							
+						}
+						else
+						{
+						sectionId = menuId.replace(/-menu/i, "");
+						sectionContent = $("#hidden-content div#" + sectionId).html();
+						$("#left-content").html(sectionContent);
+						}
+					});
+				});
+       });
+        
+    </script>
+</head>
+
+<body>
+	<header id="site_head">
+		<div class="header_cont"> <!-- 960px header-->
+			<!-- LOGO of the company-->
+			<div id="logo">
+			<h1> <a href="../index.html"> Virtual Labs </a> </h1>
+			</div>
+
+			<!--
+			<div id="help-menu">
+			<h1> <a href="../help/index.html"> Help </a> </h1>
+			</div>
+			-->
+		</div>
+			<!-- Menu -->
+	</header>
+
+	<article id="main_content"> <!--960px limit -->
+		<header id="main-title">
+		<!--	<h1>Simple pendulum </h1> --!>
+		</header>
+		<nav id="head-nav">
+		<ul>
+		</ul>
+		</nav>
+		<section id="hidden-content">
+		</section>		
+		<section id="left-content">
+			
+		</section>
+					
+		<aside>
+			
+		</aside>
+
+		<footer class="bottom">
+		</footer>
+	</div>
+</body>
+</html>
