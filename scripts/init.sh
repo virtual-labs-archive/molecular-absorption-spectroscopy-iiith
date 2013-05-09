@@ -1,38 +1,39 @@
 #!/bin/bash
+#init script for molecular absorption spectroscopy lab
 
-# init script for the molecular absorption spectroscopy lab
- 
-#init installs dependencies, runs the make file and creates the build
-#dependecies.txt is the file where all the packages required to run
-# the labs should be entered
-#it automatically runs the make file, builds the lab and copies the lab
-#to /var/www
+#init Script creates the initial environment for the molecular absorption 
+#spectroscopy lab, the script installs the server side dependencies of the lab,
+#runs the makefile, creates the build directory and copies the build
+#folder to /var/www
+#Mention all the server-side dependencies of the lab in
+#dependencies.txt
 
-#usage
+#Usage of the Script 
 
-#init.sh takes the dependecies.txt as an input and installs all the
-#required software
-#should be invoked using the following command:
-#sh scripts/init.sh scripts/dependencies.txt
+#To use init.sh, run the command
+#sh scripts/init.sh scripts/dependencies.txt 
+#init script takes dependencies.txt as an argument and installs the
+#packages mentioned in the dependencies.txt file. 
 
 #update the system packages
 apt-get update
 
-#$1 is the shell variable for command-line argument
+#$1 is the shell variable for command-line argument. 
 FILENAME=$1
 
-#reads the given file as an argument to script line by line and install packages
+#reads the file given as an argument to the script line by line and
+#installs the packages
 cat $FILENAME | while read LINE
 do
-apt-get install -y $LINE
+	echo $LINE
+	apt-get install -y $LINE
 done
 
-#changes directory  to run the makefile
-cd src
+#changes directory to run the make file
+cd ./src/
 make all
 cd ..
 
-#copies build to localhost
-cp -r build/ /var/www/
-
+#copies the build folder to localhost
+cp -r build/ /var/www
 
