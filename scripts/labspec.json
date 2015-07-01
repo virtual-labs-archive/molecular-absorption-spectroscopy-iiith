@@ -53,7 +53,7 @@
                 "Chemical Sciences"
             ], 
             "id": "ccnsb03", 
-            "integration_level": 5, 
+            "integration_level": 6, 
             "name": "Molecular Absorption Spectroscopy", 
             "server-side": true, 
             "status": "Released", 
