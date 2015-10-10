@@ -1,189 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-  
-  <!--It is a good practice to declare the encoding even for an 
-  English Web site. One function of this is to tag is to "reset"
-  the user's browser back to Latin-1 and ensure proper font 
-  settings. The Unicode "utf-8" encoding also ensures that any 
-  special characters inserted such as "Smart quotes", currency 
-  symbols, em-dashes and so forth will be properly displayed in
-  most browsers.-->
-  <meta http-equiv="Content-Type" content="text/html; 
-  charset=utf-8" >
 
-
-  <!-- The following meta element gives the appearance of using 
-  Internet Explorer (IE) but actually renders the page in google 
-  chrome thus rescuing the older IE versions and providing the 
-  speed and standards compliance, and security of Chrome 
-  http://tech18.com/google-chrome-frame-rescue-older-ie.html -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
-
-  <!-- The default title of the lab. -->
-  <title class="custom" id="page-title">Virtual Labs</title>
-  
-
-  <!-- Following meta tags store the information about the 
-  author and any other relevant information about the  code -->
-  <meta name="author" content="" class="custom">
-  <meta name="description" content="" class="custom">
-
-
-  <!-- Place the relative address of the favicon 
-  ("images/logo.jpeg" here). All major browsers support the link
-  rel="shortcut icon"  tag to associate a small icon with the 
-  page -->
-  <link rel="shortcut icon" href="images/favicon.png" 
-  class="custom">
-
-
-  <!-- These are the stylesheets used for the lab. Please don't
-  edit them; If you do, you will lose the edits in subsequent 
-  releases of this User Interface. -->
-  <link rel="stylesheet" href="css/default.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
-
-  <!-- Instead add your custom styles to override the defaults 
-  coming from the above style sheets. -->
-  <link rel="stylesheet" href="css/override.css"/>  
-  
-  <!-- ***************************************************** -->
-
-  <!-- All JavaScript at the bottom, except for Modernizr which
-  enables HTML5 elements & feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js">
-  </script>
-
-  <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-extensions: ["tex2jax.js"],
-jax: ["input/TeX","output/HTML-CSS"],
-tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-});
-</script>
-
-<!--VLEAD Google Analytics script starts here -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42255654-1', 'virtual-labs.ac.in');
-  ga('send', 'pageview');
-
-</script>
-<!--VLEAD Google Analytics script ends here -->
-</head>
-
-<body> 
-  <div id="container"></div>
-<style type="text/css">
-#lab-footer, .footer {
-    float:left;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Virtual Labs - A MHRD Govt of india Initiative">
+    <meta name="author" content="Virtual Labs - A MHRD Govt of india Initiative">
     
- width: 90%;
-}
-</style>
+    <title>Welcome to Virtual Labs - A MHRD Govt of india Initiative</title>
+    
+     <link rel="shortcut icon" href="images/favicon.ico">
+    
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<footer  class="footer">
-    <!-- Put the content here-->
-    <a href="http://http://virtual-labs.ac.in/nmeict" >Sponsered by MHRD (NME-ICT) </a> | <a href="http://http://virtual-labs.ac.in/licensing" target="_blank"> Licensing Terms </a>|<a href="http://virtual-labs.ac.in/feedback/?lab=ccnsb01">Feedback</a>
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.theme.css">
+	
+	<link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
 
-  </footer>
-  <div id="hidden-content" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src = 'tabs.js'></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-67558473-1', 'auto');ga('send', 'pageview');</script>	
+</head>
+<body id="page-top" class="index">
+<div id="top">
+	<header>
+	<!-- Navigation -->
+	    <nav class="navbar navbar-default " style="background-color: white !important; margin-bottom: 0px !important;">
+	        <div class="container-fluid">
+			            <!-- Brand and toggle get grouped for better mobile display -->
+			            <div class="navbar-header page-scroll">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                    <span class="icon-bar" style="background-color: #77BB41"></span>
+			                </button>
+			                <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/Introduction.html?domain= Chemical Sciences&lab=ABSORPTION SPECTROSCOPY VIRTUAL LAB"><img src="images/logo-new.png" class="img-responsive main-logo" /></a>
+			            </div>			
+			                        
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-div" id="bs-example-navbar-collapse-1" style="border: 0px;">
+			               
+			                <ul class="nav navbar-nav navbar-right menu-ul search-ul" style="position: relative; top: -5px;">
+			                	<li>
+			                		<form method="get" action="search-result.html">
+			                        	<input type="text" class="search-textbox" placeholder="SEARCH FOR A LAB" name="q" id="q"/>
+			                        	<input type="submit" value="" class="search-button" />
+			                        </form>
+			                	</li>
+			                </ul>
+			                
+			                <ul class="nav navbar-nav navbar-right menu-ul">
+			                    <li class="page-scroll menu-li " >
+			                        <a href="http://vlabs.ac.in" class="menu-a" >HOME</a>
+			                    </li>
+			                    <li class="page-scroll menu-li menu-li-active">
+			                        <a href="http://vlabs.ac.in"  class="menu-a menu-a-active" >ALL LABS</a>
+			                    </li>
+			                    <li class="page-scroll menu-li " >
+			                        <a href="http://vlabs.ac.in#partner" class="menu-a" >PARTNERS</a>
+			                    </li><li class="page-scroll menu-li " >
+			                        <a href="http://vlabs.ac.in#contact" class="menu-a" >CONTACT</a>
+			                    </li>
+			                </ul>
+			                
+			               
+			                	
+			            </div>
+			            <!-- /.navbar-collapse -->  
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+	</header>
+
+	<div id="content">
+			<div class="container-fluid" >
+				<div class="row">
+					<hr style="background:#ff6600 !important;  height: 8px; margin-top: 0px;">
+				</div> <!-- row end -->
+			</div> <!-- container-fluid end for slider -->
+			
+			
+			<!-- =================================================================================================================================== -->
+			<div class="container-fluid"  style="margin-left: 35px; margin-right: 35px;">
+				<h2 class="text-h2-lightblue" style=" margin-bottom: 20px; margin-top: 10px; "><a href="http://vlabs.ac.in/chemical-sciences-labs.html" class="sidebar-a" > Chemical Sciences</a><br/></h2>
+					
+					<div class="row">
+						<div class="col-md-2 sidebar-col-2">
+						<!--edit1-->
+<a href="Introduction.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Introduction</h3></a><a href="Experiments.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Experiments</h3></a><a href="Target Audience.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Target Audience</h3></a><a href="Objective.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Objective</h3></a><a href="Courses Aligned.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Courses Aligned</h3></a><a href="Prerequisites.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Prerequisites</h3></a><a href="Acknowledgement.html?domain= Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Acknowledgement</h3></a><a href="Feedback.html?domain=Chemical Sciences" class="sidebar-a" > <h3 class="text-h3-darkblue" style="margin-top: 2px;">Feedback</h3></a>						</div>
+						
+						<div class="col-md-10 lab-list-col-10">
+							
+							<!--edit -->
+<h1 class="text-h2-lightblue">ABSORPTION SPECTROSCOPY VIRTUAL LAB</h1><div>
+<p>
+This lab is about molecular absorption spectroscopy. Spectroscopy is an essential tool for physical scientists and is included in many UG and PG curricula. Spectroscopy uses the absorption, emission, or scattering of electromagnetic radiation by atoms, molecules or their ions, is employed to study these species and many physical processes. Various kinds of molecular spectroscopic techniques, such as UV-Vis (absorption) spectroscopy, fluorescence (emission) spectrometry, CD/ORD spectroscopy, infrared spectroscopy, Raman spectroscopy, NMR spectroscopy, mass spectrometry etc. are used. All methods except mass spectrometry are based on electronic radiation. Depending on the wavelength of interaction, we get information about different parts of molecules, for example, UV-Vis and Fluorescence spectroscopies --- " electronic structure ", Infrared and Raman spectroscopies --- " vibrations and/or rotations " , CD/ORD spectroscopy --- " chirality ", etc. Absorption spectroscopy involves the transfer of energy from the radiation field to the atom or molecule. In other words, it involves the measurement of the wavelength and intensity of absorption of light by a sample. </p> <p>
+UV-visible absorption spectroscopy is used in identifications of many types of organic and inorganics molecules and ions, quantitative determinations of many biological, organic, and inorganic species, determinations of equilibrium constants, determinations of stoichiometry of chemical reactions, monitoring of reaction rates, etc.</p>
+<p>
+<b>Terms:</b> <br>
+<b>Wavelength (λ):</b>  Crest-to-crest distance between waves. <br>
+<b>Frequency (ν):</b>  Number of complete oscillations that the wave makes each second (units:  number of oscillations/sec or s-1 or Hertz (Hz).<br>
+<b>Light speed:</b>  	in vacuum: 		c = 2.998 x 108 m s-1<br>	
+			in other media:  	c/n  (n = refractive index, generally &gt; 1; n = 1 for vacuum, 						<br>
+					n= 1.0002926 in air). <br>
+<p>c/n = ν λ</p><br>
+<p>The relationship between energy and frequency is given as follows:<br/></p>
+<p>E = hν = hc/λ  = hcῡ</p><br><p>
+h = Planck’s constant (6.626 x 10-34 J s and ῡ= wavenumber (most common unit is cm-1)<br>
+Energy is proportional to the frequency or wavenumber but inversely proportional to the wavelength. <br>
+<b>Spectrum:</b>  A plot of intensity vs. frequency, wavelength or wavenumber.<br>
+We see often the UV/Vis spectra as spectral bands in polar solvents like water.  One can observe electronic fine structure in some solvents or vibrational transitions in gas phase spectra. <br>
+</br></br></br></br></p>
+<img alt="Content picture" src="images/Picture1.jpg" style="height:700px"/>
+<p>
+Photons of electromagnetic radiation of different energies (frequencies or wavelengths) interact with molecules in a variety of ways:
+<ol>
+<li> X-rays can excite and eject inner shell electrons, causing ionization and bond fragmentation. </li>
+<li> Ultraviolet (UV) radiation causes high energy electronic transitions and visible radiation induces low energy electronic transitions in molecules. The resulting excited states may relax via bond breakage or various radiative and non-radiative pathways. </li>
+<li> Infrared (IR) radiation causes vibrations in molecular bonds, such as bond stretching, bond bending etc. Therefore, IR spectroscopy is often called vibrational spectroscopy.</li>
+<li> Microwaves can cause the molecules to rotate in the gas phase. This is the subject matter of microwave or rotational spectroscopy.</li>
+<li> Radio waves can induce resonance of atomic nuclei rotation in a strong magnetic field. This is the subject of nuclear magnetic resonance (NMR) spectroscopy.</li></ol>
+</p>
+<p>
+<b> Chromophores: </b>Functional groups that participate in electronic transitions. </p></br>
+<b> Auxochromes: </b>Substituents with unshared pair of electrons (e.g., -OH, -NH2, -SH, etc.). When such substituents are attached to π bond containing chromophores, they generally move the absorption max. (λmax) to longer wavelength, λ.</br>
+<b> Bathochromic Shift (Red shift): </b>A shift of λmax to longer wavelength, λ (lower energy).</br>
+<b> Hypsochromic Shift (Blue shift): </b>A shift of λmax to shorter wavelength, λ (higher energy). </br>
+<b> Hyperchromism: </b>An increase in intensity of a spectral band. </br>
+<b> Hypochromism: </b>A decrease in intensity of a spectral band.</br>
+In Absorption Spectroscopy (UV-Visible), Hyperchromic shift means an increase in Absorbance (extinction coefficient, ε) and Hypochromic shift means a decrease in Absorbance (extinction coefficient, ε).
+</br></br></p>
+<p><b>Relevant Topics</b>
+Properties of light; Molecular electronic structures; Interaction of photons with molecules; Electronic transitions, Beer-Lambert law. </p>
+</div>						</div>
+					</div>
+			</div>
+			<!-- =================================================================================================================================== -->
+
+
+
+			
+	</div> <!-- content div -->
 		
-  <!-- Javascript at the bottom for fast page loading -->
-
-  <script src="js/jquery-1.4.2.min.js"></script>
-
-  <script type="text/javascript">
-  $(document).ready(function() 
-  {
-    /**
-    $('#hidden-content').load('default.html #lab', function(response,status,xhr)
-    {
-      //alert("loaded successfully");
-    });
-    **/
-
-    $('#container').load('content.html #lab', function(response,status,xhr)
-    {
-      $("#container .default").each(function()
-      {
-                                
-        sectionId = $(this).attr('id');
-        sectionContent = $("#hidden-content #" + sectionId).html();
-        $("#container #" + sectionId).html(sectionContent);
-                                
-      });
-      
-      $("#container #lab-article-sections > section").each(function() 
-      {
-        sectionId = $(this).attr('id');
-        headerId = $("#" + sectionId + "-heading").html();
-        iconId = $("#" + sectionId + "-icon").html();
-
-
-        $("#container #lab-article-navigation ul").append(
-          "<li> <a href=\'#\' id=\'"+ sectionId + 
-          "-menu\'>" + iconId +"<br />" + headerId + 
-          "</a> </li>");
-
-        });
-      /*                          
-                                  $("#lab-article-sections").after("<div id='lab-article-sections-view'> </div>");
-                                  $("#lab-article-sections-view").html($("#lab-article-sections section:first").html());*/
-      $("#lab-article-sections section").hide();
-      $("#lab-article-sections section:first").show();
-      // Custom javascript start
-      var vari =  getUrlVars()["q"];
-      if(vari && vari.indexOf("experiments")!=-1)
-      {
-      $("#lab-article-sections section").hide();
-      $("#lab-article-section-2").show();
-      }
-
-      function getUrlVars() {
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-            vars[key] = value;
-            });
-        return vars;
-      }
-      // Custom javasript end
-      
-      $("#lab-article-navigation ul > li a").live('click', function() 
-      {
-                                                
-        menuId = $(this).attr('id'); // this points to the current element
-        sectionId = menuId.replace(/-menu/i, "");
-
-        $("#lab-article-sections section").hide();
-        $("#lab-article-sections #" + sectionId).show();
-        /*$("#lab-article-sections-view").html($("#lab-article-sections #" + sectionId).html());*/
-
-      });
-    });		
-  });
-
-  </script>
+	<footer>
+		<div class="container-fluid footer-div" style="background: url('images/footer.png'); margin-top: 120px;  padding: 20px;">
+			<div class="col-md-4 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Updates</h2>
+				<div><a href="http://vlead.vlabs.ac.in/2015/07/19/lab-integration-kit-1-0-0-released/" class="text-normal-gray-small nounderline" style="color: white" > Lab Integration Kit 1.0.0 Released</a></div>
+				<div><a href="http://vlead.vlabs.ac.in/2015/07/15/summer-sprint-integration-workshop-at-iit-guwahati/" class="text-normal-gray-small nounderline" style="color: white" > Summer Sprint Integration Workshop at IIT Guwahati</a></div>
+				<div><a href="http://vlead.vlabs.ac.in/2014/12/16/a-new-set-of-35-virtual-labs-on-portable-media/" class="text-normal-gray-small nounderline" style="color: white" > A new set of 35 Virtual Labs on Portable Media</a></div>
+			</div>
+			
+			<div class="col-md-2 border-right-green-dotted" >
+<!-- 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;">Nodal Centers</h2>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > REGISTRATION</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > LOGIN</a></div> -->
+				<!-- <div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > Outreach Portal</a></div> -->
+				<div><a href="http://vlead.virtual-labs.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > VLEAD Blog</a></div>
+				<div><a href="http://www.sakshat.ac.in/" class="text-a-lightgreen" style="text-decoration: underline;" > Sakshat Portal</a></div>
+				<div><a href="http://118.102.191.38/feedback/Registration.html" class="text-a-lightgreen" style="text-decoration: underline;" > Nodal Center</a></div>
+			</div>
+			
+			<div class="col-md-3 border-right-green-dotted" >
+<!-- 				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FAQ</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > FEEDBACK</a></div>
+				<div><a href="#" class="text-a-lightgreen" style="text-decoration: underline;" > SAKSHAT PORTAL</a></div> -->
+				<div class="text-h2-lightblue-small"> Contact : <i class="fa fa-envelope-o" style="color: white; font-size: 0.8em;"></i> <a class="text-a-lightgreen" style="text-decoration: underline; font-size: 1.0em;" href="mailto:support@vlab.co.in">support@vlabs.ac.in</a></div>
+				<div><a href="http://118.102.191.38/feedback/feedback.html" class="text-a-lightgreen" style="text-decoration: underline;" > Feedback</a></div>
+			</div>
+			
+			<div class="col-md-2 border-right-green-dotted" >
+				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
+				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
+				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				
+			</div>
+			
+ 		</div>
+	</footer>
 
 
-  <script type="text/javascript" src="js/MathJax/MathJax.js">
-  </script>
+</div> <!-- top div -->
 
-
-  <!-- ******* ADD/OVERRIDE JAVASCRIPT FILES HERE ********** -->
-
-  <!-- ***************************************************** -->
-  
-  
 </body>
+
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    
+    <!-- Include js plugin -->
+	<script src="vendors/owl-carousel/owl.carousel.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		 
+		  var owl = $("#owl-demo");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      /* autoPlay : 3000,
+		      stopOnHover : true */
+		  });
+		  
+		  //owl for partner institutions
+		  var owl = $("#owl-partner-institutions");
+		  owl.owlCarousel({
+		      navigation: true,
+		      navigationText: [
+		                       "<img src='images/left-arrow.png'>",
+		                       "<img src='images/right-arrow.png'>"
+		                       ],
+		      autoPlay : 3000,
+		      stopOnHover : true,
+		      items : 8,
+		  });
+		 
+		
+	
+	 //owl for aboutus
+	  var owl = $("#owl-aboutus");
+	  owl.owlCarousel({
+	      navigation: true,
+	      singleItem:true
+	  });
+	 
+	});
+	</script>
+	
 </html>
