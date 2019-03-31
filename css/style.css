@@ -1,0 +1,26 @@
+table *{
+    color: #424242;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    height: auto;
+    text-align: left;
+}
+
+th, td{
+    padding: 1%;
+    text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {background-color: #cbd9f2;}
