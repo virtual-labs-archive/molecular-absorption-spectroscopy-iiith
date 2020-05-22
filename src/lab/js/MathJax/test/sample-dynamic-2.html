@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
 <title>Dynamic Preview of Textarea with MathJax Content</title>
 <!-- Copyright (c) 2012 Design Science, Inc. -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -12,7 +15,7 @@
     tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
   });
 </script>
-<script type="text/javascript" src="../MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="../MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 <script>
 var Preview = {
@@ -97,12 +100,11 @@ Preview.callback.autoReset = true;  // make sure it can run more than once
 
 </script>
 </head>
-<body>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 
 Type text in the box below:<br/>
 
-<textarea id="MathInput" cols="60" rows="10" onkeyup="Preview.Update()" style="margin-top:5px">
-</textarea>
+<textarea cols="60" id="MathInput" onkeyup="Preview.Update()" rows="10" style="margin-top:5px"></textarea>
 <br/><br/>
 Preview is shown here:
 <div id="MathPreview" style="border:1px solid; padding: 3px; width:50%; margin-top:5px"></div>
@@ -113,5 +115,6 @@ visibility:hidden; position:absolute; top:0; left: 0"><div>
 Preview.Init();
 </script>
 
-</body>
-</html>
+
+
+</div></div></body></html>

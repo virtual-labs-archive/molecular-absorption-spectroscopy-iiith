@@ -1,14 +1,14 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     
-    <title>MathJax Output Formats &mdash; MathJax v2.0 documentation</title>
-    <link rel="stylesheet" href="_static/mj.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <title>MathJax Output Formats — MathJax v2.0 documentation</title>
+    <link href="_static/mj.css" rel="stylesheet" type="text/css"/>
+    <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
@@ -18,29 +18,26 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script src="_static/jquery.js" type="text/javascript"></script>
+    <script src="_static/underscore.js" type="text/javascript"></script>
+    <script src="_static/doctools.js" type="text/javascript"></script>
     <!--<script type="text/javascript" src="../../MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
-    <link rel="top" title="MathJax v2.0 documentation" href="index.html" />
-    <link rel="next" title="The MathJax Community" href="community.html" />
-    <link rel="prev" title="MathJax AsciiMath Support" href="asciimath.html" /> 
+    <link href="index.html" rel="top" title="MathJax v2.0 documentation"/>
+    <link href="community.html" rel="next" title="The MathJax Community"/>
+    <link href="asciimath.html" rel="prev" title="MathJax AsciiMath Support"/> 
   </head>
-  <body>
+  <body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
     
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="community.html" title="The MathJax Community"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="asciimath.html" title="MathJax AsciiMath Support"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">MathJax v2.0 documentation</a> &raquo;</li> 
+          <a accesskey="I" href="genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a accesskey="N" href="community.html" title="The MathJax Community">next</a> |</li>
+        <li class="right">
+          <a accesskey="P" href="asciimath.html" title="MathJax AsciiMath Support">previous</a> |</li>
+        <li><a href="index.html">MathJax v2.0 documentation</a> »</li> 
       </ul>
     </div>  
 
@@ -55,7 +52,7 @@
 <ul class="simple">
 <li>Using HTML-with-CSS to lay out the mathematics,</li>
 <li>Using <a class="reference internal" href="glossary.html#term-svg"><em class="xref std std-term">SVG</em></a> to lay out the mathematics, or</li>
-<li>Using a browser&#8217;s native MathML support.</li>
+<li>Using a browser’s native MathML support.</li>
 </ul>
 <p>These are implemented by the <cite>HTML-CSS</cite>, <cite>SVG</cite> and <cite>NativeMML</cite> output
 processors.</p>
@@ -67,16 +64,16 @@ select one of these output processors for you.  If the config file ends in
 browser supports it well enough, otherwise HTML-CSS output will be used.</p>
 <p>If you are performing your own in-line or file-based configuration,
 you select which one you want to use by including either
-<tt class="docutils literal"><span class="pre">&quot;output/HTML-CSS&quot;</span></tt>, <tt class="docutils literal"><span class="pre">&quot;output/SVG&quot;</span></tt>, or <tt class="docutils literal"><span class="pre">&quot;output/NativeMML&quot;</span></tt> in
+<tt class="docutils literal"><span class="pre">"output/HTML-CSS"</span></tt>, <tt class="docutils literal"><span class="pre">"output/SVG"</span></tt>, or <tt class="docutils literal"><span class="pre">"output/NativeMML"</span></tt> in
 the <cite>jax</cite> array of your MathJax configuration.  For example</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;input/TeX&quot;</span><span class="p">,</span><span class="s2">&quot;output/HTML-CSS&quot;</span><span class="p">]</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">"input/TeX"</span><span class="p">,</span><span class="s2">"output/HTML-CSS"</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>would specify TeX input and HTML-with-CSS output for the mathematics
 in your document.</p>
 <p>The <strong>HTML-CSS output processor</strong> produces high-quality output in all
 major browsers, with results that are consistent across browsers and
-operating systems.  This is MathJax&#8217;s primary output mode.  Its major
+operating systems.  This is MathJax’s primary output mode.  Its major
 advantage is its quality and consistency; its drawback is that it is
 slower than the NativeMML mode at rendering the mathematics.
 Historically, the performance in Internet Explorer (and IE8 in
@@ -84,13 +81,13 @@ particular) was quite poor, with the page getting slower and slower as
 more math is processed.  MathJax version 2.0 includes a number of
 optimizations to improve the display performance in IE, and it is now
 more comparable to other browsers.  The HTML-CSS output uses web-based
-fonts so that users don&#8217;t have to have math fonts installed on their
+fonts so that users don’t have to have math fonts installed on their
 computers, which introduces some printing issues in certain browsers.</p>
 <p>The <strong>SVG output processor</strong> is new in MathJax version 2.0, and it
 uses <cite>Scalable Vector Graphics</cite> to render the mathematics on the page.
 SVG is supported in all the major browsers and most mobile devices;
 note, however, that Internet Explorer prior to IE9 does not support
-SVG, and IE9 only does in &#8220;IE9 standards mode&#8221;, not its emulation
+SVG, and IE9 only does in “IE9 standards mode”, not its emulation
 modes for earlier versions.  The SVG output mode is high quality and
 slightly faster than HTML-CSS, and it does not suffer from some of the
 font-related issues that HTML-CSS does, so prints well in all
@@ -98,60 +95,60 @@ browsers.  This format also works well in some ebook readers (e.g.,
 iBooks).  The disadvantages of this mode are the following: first,
 Internet Explorer only supports SVG in IE9 and later versions (and
 then only in IE9 standards mode or above), and some versions of the
-Android Internet browser don&#8217;t have SVG enabled. Second, it does not
+Android Internet browser don’t have SVG enabled. Second, it does not
 take advantage of STIX fonts, and so only has access to the characters
 in the web-based fonts, and third, its variable-width tables become
-fixed size once they are typeset, and don&#8217;t rescale if the window size
+fixed size once they are typeset, and don’t rescale if the window size
 changes (for example).  Since equation numbers are handled through
 variable-width tables, that means equation numbers may not stay at the
 edge of the window if it is resized.  For these reasons it is probably
 best not to force the use of SVG output unless you have some control
 over the browsers that are used to view your documents.</p>
-<p>The <strong>NativeMML output processor</strong> uses the browser&#8217;s internal MathML
+<p>The <strong>NativeMML output processor</strong> uses the browser’s internal MathML
 support (if any) to render the mathematics.  Currently, Firefox has
 native support for MathML, and IE has the <a class="reference external" href="http://www.dessci.com/en/products/mathplayer/">MathPlayer plugin</a> for rendering
 MathML.  Opera has some built-in support for MathML that works well
 with simple equations, but fails with more complex formulas, so we
-don&#8217;t recommend using the NativeMML output processor with Opera.
+don’t recommend using the NativeMML output processor with Opera.
 Safari has some support for MathML since version 5.1, but the quality
-is not as high as either Firefox&#8217;s implementation or IE with MathPlayer.
-Chrome, Konqueror, and most other browsers don&#8217;t support MathML
+is not as high as either Firefox’s implementation or IE with MathPlayer.
+Chrome, Konqueror, and most other browsers don’t support MathML
 natively, but this may change in the future, since MathML is part of
 the HTML5 specification.</p>
 <p>The advantage of the NativeMML output Processor is its speed, since
 native MathML support is much faster than using complicated HTML and
 CSS to typeset mathematics, as the HTML-CSS output processor does.
-The disadvantage is that you are dependent on the browser&#8217;s MathML
+The disadvantage is that you are dependent on the browser’s MathML
 implementation for your rendering, and these vary in quality of output
 and completeness of implementation.  MathJax relies on features that
-are not available in some renderers (for example, Firefox&#8217;s MathML
+are not available in some renderers (for example, Firefox’s MathML
 support does not implement the features needed for labeled equations).
 The results using the NativeMML output processor may have spacing or
-other rendering problems that are outside of MathJax&#8217;s control.</p>
+other rendering problems that are outside of MathJax’s control.</p>
 <div class="section" id="automatic-selection-of-the-output-processor">
 <h2>Automatic Selection of the Output Processor<a class="headerlink" href="#automatic-selection-of-the-output-processor" title="Permalink to this headline">¶</a></h2>
 <p>Since not all browsers support MathML natively, it would be unwise to
 choose the NativeMML output processor unless you are sure of your
-audience&#8217;s browser capabilities.  MathJax can help with that, however,
+audience’s browser capabilities.  MathJax can help with that, however,
 since a number of its combined configuration files will select
 NativeMML output when the browser supports it well enough, and
 HTML-CSS output otherwise.  These are the configuration files that end
 in <tt class="docutils literal"><span class="pre">_HTMLorMML</span></tt>.</p>
 <p>If you are doing your own configuration, there is a special configuration
 file that you can include that will choose between NativeMML and HTML-CSS
-depending on the browser in use.  To invoke it, add <tt class="docutils literal"><span class="pre">&quot;MMLorHTML.js&quot;</span></tt> to
-your configuration&#8217;s <cite>config</cite> array, and <strong>do not</strong> include an output
+depending on the browser in use.  To invoke it, add <tt class="docutils literal"><span class="pre">"MMLorHTML.js"</span></tt> to
+your configuration’s <cite>config</cite> array, and <strong>do not</strong> include an output
 processor in your <cite>jax</cite> array; MathJax will fill that in for you based on
-the abilities of your user&#8217;s browser.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">config</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;MMLorHTML.js&quot;</span><span class="p">],</span>
-<span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;input/TeX&quot;</span><span class="p">]</span>
+the abilities of your user’s browser.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="nx">config</span><span class="o">:</span> <span class="p">[</span><span class="s2">"MMLorHTML.js"</span><span class="p">],</span>
+<span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">"input/TeX"</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>By default, MathJax will choose HTML-CSS in all browsers except for
 one case:  Internet Explorer when the MathPlayer plugin is present.
 In the past, MathJax selected NativeMML output for Firefox as well,
 but we have found that there are too many rendering issues with
-Firefox&#8217;s native MathML implementation, and so MathJax now selects
+Firefox’s native MathML implementation, and so MathJax now selects
 HTML-CSS output for Firefox by default as well.  Users can still use
 the Mathjax contextual menu to select the NativeMML renderer if they
 wish to choose greater speed at the expense of some quality.</p>
@@ -160,13 +157,13 @@ basis or a global basis.  See the <tt class="docutils literal"><span class="pre"
 <a class="reference internal" href="options/MMLorHTML.html#configure-mmlorhtml"><em>Configuring MMLorHTML</em></a> section for further
 details.  As an example, this configuration tells MathJax to use
 native MathML support rather than HTML-CSS output for Firefox:</p>
-<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-mathjax-config&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/x-mathjax-config"</span><span class="nt">&gt;</span>
   <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-    <span class="nx">MMLorHTML</span><span class="o">:</span> <span class="p">{</span> <span class="nx">prefer</span><span class="o">:</span> <span class="p">{</span> <span class="nx">Firefox</span><span class="o">:</span> <span class="s2">&quot;MML&quot;</span> <span class="p">}</span> <span class="p">}</span>
+    <span class="nx">MMLorHTML</span><span class="o">:</span> <span class="p">{</span> <span class="nx">prefer</span><span class="o">:</span> <span class="p">{</span> <span class="nx">Firefox</span><span class="o">:</span> <span class="s2">"MML"</span> <span class="p">}</span> <span class="p">}</span>
   <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span>
-  <span class="na">src=</span><span class="s">&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span>
+  <span class="na">src=</span><span class="s">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/script&gt;</span>
 </pre></div>
 </div>
@@ -185,13 +182,13 @@ be taken lightly.</p>
 <span id="automatic-linebreaking"></span><h2>Automatic Line Breaking<a class="headerlink" href="#automatic-line-breaking" title="Permalink to this headline">¶</a></h2>
 <p>The HTML-CSS and SVG output processors implement (most of) the MathML3
 automatic line-breaking specification.  (The NativeMML output
-processor relies on the browser&#8217;s native MathML support to handle line
+processor relies on the browser’s native MathML support to handle line
 breaking when it is used.)  Since line-breaking takes extra processing
 and so can slow down the mathematical output, it is off by default,
 but you can enable it by adding</p>
-<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-mathjax-config&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/x-mathjax-config"</span><span class="nt">&gt;</span>
 <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-  <span class="s2">&quot;HTML-CSS&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="nx">linebreaks</span><span class="o">:</span> <span class="p">{</span> <span class="nx">automatic</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="s2">"HTML-CSS"</span><span class="o">:</span> <span class="p">{</span> <span class="nx">linebreaks</span><span class="o">:</span> <span class="p">{</span> <span class="nx">automatic</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>
          <span class="nx">SVG</span><span class="o">:</span> <span class="p">{</span> <span class="nx">linebreaks</span><span class="o">:</span> <span class="p">{</span> <span class="nx">automatic</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">}</span>
 <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span>
@@ -217,7 +214,7 @@ breakpoints, but it does not know the meaning of the mathematics, and
 may not choose the optimal breakpoints. We will continue to work on
 the algorithm as we gain information from its actual use in the field.
 If you are using <a class="reference internal" href="glossary.html#term-mathml"><em class="xref std std-term">MathML</em></a> as your input format, you can use the
-<tt class="docutils literal"><span class="pre">linebreak=&quot;goodbreak&quot;</span></tt> and <tt class="docutils literal"><span class="pre">linebreak=&quot;badbreak&quot;</span></tt> attributes on
+<tt class="docutils literal"><span class="pre">linebreak="goodbreak"</span></tt> and <tt class="docutils literal"><span class="pre">linebreak="badbreak"</span></tt> attributes on
 <tt class="docutils literal"><span class="pre">&lt;mo&gt;</span></tt> elements to help MathJax pick the best breakpoints for your
 mathematics.</p>
 </div>
@@ -237,7 +234,7 @@ mode in order to get better performance.  That is no longer necessary.
 Indeed, the fastest modes in IE8 and IE9 now are their IE8 standards
 and IE9 standards modes, so it is best to force the highest mode
 possible.  That can be accomplished by adding</p>
-<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge&quot;</span><span class="nt">&gt;</span>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
 </pre></div>
 </div>
 <p>at the top of the <tt class="docutils literal"><span class="pre">&lt;head&gt;</span></tt> section of your HTML documents.  Note
@@ -248,17 +245,17 @@ any stylesheets, scripts, or other content are loaded.</p>
 <span id="id1"></span><h2>HTML-CSS Extensions<a class="headerlink" href="#html-css-extensions" title="Permalink to this headline">¶</a></h2>
 <p>The HTML-CSS output jax uses elements with width set to 100% when it
 typesets displayed equations.  If there are floating elements on the
-left or right, this can mean that displayed mathematics isn&#8217;t properly
+left or right, this can mean that displayed mathematics isn’t properly
 centered, and can cause equation numbers to overlap the floating
 content.  To avoid this, you can specify the <cite>handle-floats</cite> extension
 in the <cite>extensions</cite> array of your <cite>HTML-CSS</cite> configuration block.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;HTML-CSS&quot;</span><span class="o">:</span> <span class="p">{</span>
-  <span class="nx">extensions</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;handle-floats.js&quot;</span><span class="p">]</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">"HTML-CSS"</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">extensions</span><span class="o">:</span> <span class="p">[</span><span class="s2">"handle-floats.js"</span><span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>This will use CSS that puts the displayed equations into elements that
-work like tabel cells, and won&#8217;t overlap the floaring content.
+work like tabel cells, and won’t overlap the floaring content.
 Because this is somewhat of a misuse of CSS, it is not used by
 default, but it has proved successful in most situations, so you may
 consider using it in pages that include material that floats to the
@@ -287,18 +284,16 @@ other options of the HTML-CSS output jax.</p>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="asciimath.html"
-                        title="previous chapter">MathJax AsciiMath Support</a></p>
+  <p class="topless"><a href="asciimath.html" title="previous chapter">MathJax AsciiMath Support</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="community.html"
-                        title="next chapter">The MathJax Community</a></p>
+  <p class="topless"><a href="community.html" title="next chapter">The MathJax Community</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+    <form action="search.html" class="search" method="get">
+      <input name="q" size="18" type="text"/>
+      <input type="submit" value="Go"/>
+      <input name="check_keywords" type="hidden" value="yes"/>
+      <input name="area" type="hidden" value="default"/>
     </form>
     <p class="searchtip" style="font-size: 90%">
     Enter search terms or a module, class or function name.
@@ -313,21 +308,18 @@ other options of the HTML-CSS output jax.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="community.html" title="The MathJax Community"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="asciimath.html" title="MathJax AsciiMath Support"
-             >previous</a> |</li>
-        <li><a href="index.html">MathJax v2.0 documentation</a> &raquo;</li> 
+          <a href="genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="community.html" title="The MathJax Community">next</a> |</li>
+        <li class="right">
+          <a href="asciimath.html" title="MathJax AsciiMath Support">previous</a> |</li>
+        <li><a href="index.html">MathJax v2.0 documentation</a> »</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2012 Design Science.
+        © Copyright 2012 Design Science.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
     
-  </body>
-</html>
+  
+</body></html>

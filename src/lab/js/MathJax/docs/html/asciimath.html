@@ -1,14 +1,14 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     
-    <title>MathJax AsciiMath Support &mdash; MathJax v2.0 documentation</title>
-    <link rel="stylesheet" href="_static/mj.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <title>MathJax AsciiMath Support — MathJax v2.0 documentation</title>
+    <link href="_static/mj.css" rel="stylesheet" type="text/css"/>
+    <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
@@ -18,29 +18,26 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script src="_static/jquery.js" type="text/javascript"></script>
+    <script src="_static/underscore.js" type="text/javascript"></script>
+    <script src="_static/doctools.js" type="text/javascript"></script>
     <!--<script type="text/javascript" src="../../MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
-    <link rel="top" title="MathJax v2.0 documentation" href="index.html" />
-    <link rel="next" title="MathJax Output Formats" href="output.html" />
-    <link rel="prev" title="MathJax MathML Support" href="mathml.html" /> 
+    <link href="index.html" rel="top" title="MathJax v2.0 documentation"/>
+    <link href="output.html" rel="next" title="MathJax Output Formats"/>
+    <link href="mathml.html" rel="prev" title="MathJax MathML Support"/> 
   </head>
-  <body>
+  <body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
     
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="output.html" title="MathJax Output Formats"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="mathml.html" title="MathJax MathML Support"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">MathJax v2.0 documentation</a> &raquo;</li> 
+          <a accesskey="I" href="genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a accesskey="N" href="output.html" title="MathJax Output Formats">next</a> |</li>
+        <li class="right">
+          <a accesskey="P" href="mathml.html" title="MathJax MathML Support">previous</a> |</li>
+        <li><a href="index.html">MathJax v2.0 documentation</a> »</li> 
       </ul>
     </div>  
 
@@ -56,12 +53,12 @@ the <cite>asciimath2jax</cite> preprocessor, and the <cite>AsciiMath</cite> inpu
 The first of these looks for mathematics within your web page
 (indicated by delimiters like <tt class="docutils literal"><span class="pre">`...`</span></tt>) and marks the mathematics for
 later processing by MathJax.  The AsciiMath input processor is what
-converts the AsciiMath notation into MathJax&#8217;s internal format, where
-one of MathJax&#8217;s output processors then displays it in the web page.</p>
-<p>The AsciiMath input jax actually includes a copy of Peter Jipsen&#8217;s
+converts the AsciiMath notation into MathJax’s internal format, where
+one of MathJax’s output processors then displays it in the web page.</p>
+<p>The AsciiMath input jax actually includes a copy of Peter Jipsen’s
 <tt class="docutils literal"><span class="pre">ASCIIMathML.js</span></tt> file (see the <a class="reference external" href="http://www1.chapman.edu/~jipsen/mathml/asciimath.html">AsciiMath home page</a> for
 details), and is included by permission of the author.  This means
-that the results of MathJax&#8217;s AsciiMath processing should be the same
+that the results of MathJax’s AsciiMath processing should be the same
 as using the actual <tt class="docutils literal"><span class="pre">ASCIIMathML.js</span></tt> package (at least as far as the
 MathML that it generates is concerned).  Thanks go to David Lippman
 for writing the initial version of the AsciiMath preprocessor and
@@ -71,7 +68,7 @@ markers you want to use for your math delimiters.  See the
 <a class="reference internal" href="options/asciimath2jax.html#configure-asciimath2jax"><em>asciimath2jax configuration options</em></a> section for
 details on how to customize the action of <cite>asciimath2jax</cite>.</p>
 <p>The AsciiMath input processor handles conversion of your mathematical
-notation into MathJax&#8217;s internal format (which is essentially MathML).
+notation into MathJax’s internal format (which is essentially MathML).
 The AsciiMath input processor has few configuration options (see the
 <a class="reference internal" href="options/AsciiMath.html#configure-asciimath"><em>AsciiMath options</em></a> section for details).</p>
 <p>The AsciiMath input jax handles only the original ASCIIMathML notation
@@ -79,7 +76,7 @@ The AsciiMath input processor has few configuration options (see the
 in version 2.0 of ASCIIMathML, though the AsciiMath input jax does
 expose the tables that define the symbols that AsciiMath processes,
 and so it would be possible to extend them to include additional
-symbols.  In general, it is probably better to use MathJax&#8217;s <a class="reference internal" href="tex.html#tex-support"><em>TeX
+symbols.  In general, it is probably better to use MathJax’s <a class="reference internal" href="tex.html#tex-support"><em>TeX
 input jax</em></a> to handle LaTeX notation instead.</p>
 <div class="section" id="asciimath-delimiters">
 <h2>AsciiMath delimiters<a class="headerlink" href="#asciimath-delimiters" title="Permalink to this headline">¶</a></h2>
@@ -88,15 +85,15 @@ input jax</em></a> to handle LaTeX notation instead.</p>
 does <strong>not</strong> define <tt class="docutils literal"><span class="pre">$...$</span></tt> as math delimiters.  That is because
 dollar signs appear too often in non-mathematical settings, which
 could cause some text to be treated as mathematics unexpectedly.  For
-example, with single-dollar delimiters, &#8221;... the cost is $2.50 for the
-first one, and $2.00 for each additional one ...&#8221; would cause the
-phrase &#8220;2.50 for the first one, and&#8221; to be treated as mathematics
+example, with single-dollar delimiters, ”... the cost is $2.50 for the
+first one, and $2.00 for each additional one ...” would cause the
+phrase “2.50 for the first one, and” to be treated as mathematics
 since it falls between dollar signs.  For this reason, if you want to
 use single-dollars for AsciiMath notation, you must enable that
 explicitly in your configuration:</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
   <span class="nx">asciimath2jax</span><span class="o">:</span> <span class="p">{</span>
-    <span class="nx">delimiters</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="s1">&#39;$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;`&#39;</span><span class="p">,</span><span class="s1">&#39;`&#39;</span><span class="p">]]</span>
+    <span class="nx">delimiters</span><span class="o">:</span> <span class="p">[[</span><span class="s1">'$'</span><span class="p">,</span><span class="s1">'$'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'`'</span><span class="p">,</span><span class="s1">'`'</span><span class="p">]]</span>
   <span class="p">}</span>
 <span class="p">});</span>
 </pre></div>
@@ -119,7 +116,7 @@ need to be aware of the special characters used by HTML as part of its
 markup.  There cannot be HTML tags within the math delimiters (other
 than <tt class="docutils literal"><span class="pre">&lt;BR&gt;</span></tt>) as AsciiMath-formatted math does not include HTML tags.
 Also, since the mathematics is initially given as text on the page,
-you need to be careful that your mathematics doesn&#8217;t look like HTML
+you need to be careful that your mathematics doesn’t look like HTML
 tags to the browser (which parses the page before MathJax gets to see
 it).  In particular, that means that you have to be careful about
 things like less-than and greater-than signs (<tt class="docutils literal"><span class="pre">&lt;</span></tt> and <tt class="docutils literal"><span class="pre">&gt;</span></tt>), and
@@ -132,8 +129,8 @@ beginning of a tag named <tt class="docutils literal"><span class="pre">y</span>
 HTML).  When this happens, the browser will think the tag continues up
 to the next <tt class="docutils literal"><span class="pre">&gt;</span></tt> in the document (typically the end of the next
 actual tag in the HTML file), and you may notice that you are missing
-part of the text of the document.  In the example above, the &#8220;<tt class="docutils literal"><span class="pre">we</span>
-<span class="pre">have</span> <span class="pre">...</span></tt>&#8221; will not be displayed because the browser thinks it is
+part of the text of the document.  In the example above, the “<tt class="docutils literal"><span class="pre">we</span>
+<span class="pre">have</span> <span class="pre">...</span></tt>” will not be displayed because the browser thinks it is
 part of the tag starting at <tt class="docutils literal"><span class="pre">&lt;y</span></tt>.  This is one indication you can
 use to spot this problem; it is a common error and should be avoided.</p>
 <p>Usually, it is sufficient to simply put spaces around these symbols to
@@ -167,18 +164,16 @@ does.</p>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="mathml.html"
-                        title="previous chapter">MathJax MathML Support</a></p>
+  <p class="topless"><a href="mathml.html" title="previous chapter">MathJax MathML Support</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="output.html"
-                        title="next chapter">MathJax Output Formats</a></p>
+  <p class="topless"><a href="output.html" title="next chapter">MathJax Output Formats</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+    <form action="search.html" class="search" method="get">
+      <input name="q" size="18" type="text"/>
+      <input type="submit" value="Go"/>
+      <input name="check_keywords" type="hidden" value="yes"/>
+      <input name="area" type="hidden" value="default"/>
     </form>
     <p class="searchtip" style="font-size: 90%">
     Enter search terms or a module, class or function name.
@@ -193,21 +188,18 @@ does.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="output.html" title="MathJax Output Formats"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="mathml.html" title="MathJax MathML Support"
-             >previous</a> |</li>
-        <li><a href="index.html">MathJax v2.0 documentation</a> &raquo;</li> 
+          <a href="genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="output.html" title="MathJax Output Formats">next</a> |</li>
+        <li class="right">
+          <a href="mathml.html" title="MathJax MathML Support">previous</a> |</li>
+        <li><a href="index.html">MathJax v2.0 documentation</a> »</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2012 Design Science.
+        © Copyright 2012 Design Science.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
     
-  </body>
-</html>
+  
+</body></html>

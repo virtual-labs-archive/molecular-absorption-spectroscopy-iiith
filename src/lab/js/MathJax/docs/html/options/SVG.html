@@ -1,14 +1,14 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     
-    <title>The SVG output processor &mdash; MathJax v2.0 documentation</title>
-    <link rel="stylesheet" href="../_static/mj.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <title>The SVG output processor — MathJax v2.0 documentation</title>
+    <link href="../_static/mj.css" rel="stylesheet" type="text/css"/>
+    <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
@@ -18,31 +18,28 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script src="../_static/jquery.js" type="text/javascript"></script>
+    <script src="../_static/underscore.js" type="text/javascript"></script>
+    <script src="../_static/doctools.js" type="text/javascript"></script>
     <!--<script type="text/javascript" src="../../../MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
-    <link rel="top" title="MathJax v2.0 documentation" href="../index.html" />
-    <link rel="up" title="Configuration Objects" href="index.html" />
-    <link rel="next" title="The MMLorHTML configuration options" href="MMLorHTML.html" />
-    <link rel="prev" title="The NativeMML output processor" href="NativeMML.html" /> 
+    <link href="../index.html" rel="top" title="MathJax v2.0 documentation"/>
+    <link href="index.html" rel="up" title="Configuration Objects"/>
+    <link href="MMLorHTML.html" rel="next" title="The MMLorHTML configuration options"/>
+    <link href="NativeMML.html" rel="prev" title="The NativeMML output processor"/> 
   </head>
-  <body>
+  <body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
     
     <div class="related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="MMLorHTML.html" title="The MMLorHTML configuration options"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="NativeMML.html" title="The NativeMML output processor"
-             accesskey="P">previous</a> |</li>
-        <li><a href="../index.html">MathJax v2.0 documentation</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Configuration Objects</a> &raquo;</li> 
+          <a accesskey="I" href="../genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a accesskey="N" href="MMLorHTML.html" title="The MMLorHTML configuration options">next</a> |</li>
+        <li class="right">
+          <a accesskey="P" href="NativeMML.html" title="The NativeMML output processor">previous</a> |</li>
+        <li><a href="../index.html">MathJax v2.0 documentation</a> »</li>
+          <li><a accesskey="U" href="index.html">Configuration Objects</a> »</li> 
       </ul>
     </div>  
 
@@ -54,14 +51,14 @@
   <div class="section" id="the-svg-output-processor">
 <span id="configure-svg"></span><h1>The SVG output processor<a class="headerlink" href="#the-svg-output-processor" title="Permalink to this headline">¶</a></h1>
 <p>The options below control the operation of the SVG output
-processor that is run when you include <tt class="docutils literal"><span class="pre">&quot;output/SVG&quot;</span></tt> in the
+processor that is run when you include <tt class="docutils literal"><span class="pre">"output/SVG"</span></tt> in the
 <cite>jax</cite> array of your configuration or load a combined configuration
 file that includes the SVG output jax.  They are listed with their default
 values.  To set any of these options, include an <tt class="docutils literal"><span class="pre">SVG</span></tt> section
 in your <tt class="xref py py-meth docutils literal"><span class="pre">MathJax.Hub.Config()</span></tt> call.  Note that, because of the
 dash, you need to enclose the name in quotes.  For example</p>
 <div class="highlight-javascript"><div class="highlight"><pre><span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-  <span class="s2">&quot;SVG&quot;</span><span class="o">:</span> <span class="p">{</span>
+  <span class="s2">"SVG"</span><span class="o">:</span> <span class="p">{</span>
     <span class="nx">scale</span><span class="o">:</span> <span class="mi">120</span>
   <span class="p">}</span>
 <span class="p">});</span>
@@ -89,7 +86,7 @@ prevent MathJax from making the mathematics too small.</p>
 
 <dl class="describe">
 <dt>
-<tt class="descname">font: &quot;TeX&quot;</tt></dt>
+<tt class="descname">font: "TeX"</tt></dt>
 <dd><p>This is the font to use for rendering the mathematics.  Note that
 currently only the <cite>TeX</cite> font is available.</p>
 </dd></dl>
@@ -105,11 +102,11 @@ same, so a value that is good for you may not be good for everyone.</p>
 
 <dl class="describe">
 <dt>
-<tt class="descname">undefinedFamily: &quot;STIXGeneral, 'Arial Unicode MS', serif&quot;</tt></dt>
+<tt class="descname">undefinedFamily: "STIXGeneral, 'Arial Unicode MS', serif"</tt></dt>
 <dd><p>This is the font-family CSS value used for characters that are not
 in the selected font (e.g., this is where to look for characters
 not included in the MathJax TeX fonts).  IE will stop looking
-after the first font that exists on the system (even if it doesn&#8217;t
+after the first font that exists on the system (even if it doesn’t
 contain the needed character), so order these carefully.</p>
 </dd></dl>
 
@@ -118,7 +115,7 @@ contain the needed character), so order these carefully.</p>
 <tt class="descname">mtextFontInherit: false</tt></dt>
 <dd><p>This setting controls whether <tt class="docutils literal"><span class="pre">&lt;mtext&gt;</span></tt> elements will be typeset
 using the math fonts or the font of the surrounding text.  When
-<tt class="docutils literal"><span class="pre">false</span></tt>, the font for <tt class="docutils literal"><span class="pre">mathvariant=&quot;normal&quot;</span></tt> will be used;
+<tt class="docutils literal"><span class="pre">false</span></tt>, the font for <tt class="docutils literal"><span class="pre">mathvariant="normal"</span></tt> will be used;
 when <tt class="docutils literal"><span class="pre">true</span></tt>, the font will be inherited from the surrounding
 paragraph.</p>
 </dd></dl>
@@ -141,7 +138,7 @@ as if they were MathML, you might need to set this to true.</p>
 <tt class="descname">EqnChunkFactor: 1.5</tt></dt>
 <dt>
 <tt class="descname">EqnChunkDelay: 100</tt></dt>
-<dd><p>These values control how &#8220;chunky&#8221; the display of mathematical
+<dd><p>These values control how “chunky” the display of mathematical
 expressions will be; that is, how often the equations will be
 updated as they are processed.</p>
 <p><tt class="docutils literal"><span class="pre">EqnChunk</span></tt> is the number of equations that will be typeset before
@@ -170,20 +167,20 @@ ones.  The object contains the following values:</p>
 <dt>
 <tt class="descname">automatic: false</tt></dt>
 <dd><p>This controls the automatic breaking of expressions: when
-<tt class="docutils literal"><span class="pre">false</span></tt>, only <tt class="docutils literal"><span class="pre">linebreak=&quot;newline&quot;</span></tt> is processed; when
+<tt class="docutils literal"><span class="pre">false</span></tt>, only <tt class="docutils literal"><span class="pre">linebreak="newline"</span></tt> is processed; when
 <tt class="docutils literal"><span class="pre">true</span></tt>, line breaks are inserted automatically in long
 expressions.</p>
 </dd></dl>
 
 <dl class="describe">
 <dt>
-<tt class="descname">width: &quot;container&quot;</tt></dt>
+<tt class="descname">width: "container"</tt></dt>
 <dd><p>This controls how wide the lines of mathematics can be.</p>
-<p>Use an explicit width like <tt class="docutils literal"><span class="pre">&quot;30em&quot;</span></tt> for a fixed width.
-Use <tt class="docutils literal"><span class="pre">&quot;container&quot;</span></tt> to compute the size from the containing
+<p>Use an explicit width like <tt class="docutils literal"><span class="pre">"30em"</span></tt> for a fixed width.
+Use <tt class="docutils literal"><span class="pre">"container"</span></tt> to compute the size from the containing
 element.
-Use <tt class="docutils literal"><span class="pre">&quot;nn%</span> <span class="pre">container&quot;</span></tt> for a portion of the container.
-Use <tt class="docutils literal"><span class="pre">&quot;nn%&quot;</span></tt> for a portion of the window size.</p>
+Use <tt class="docutils literal"><span class="pre">"nn%</span> <span class="pre">container"</span></tt> for a portion of the container.
+Use <tt class="docutils literal"><span class="pre">"nn%"</span></tt> for a portion of the window size.</p>
 <p>The container-based widths may be slower, and may not produce
 the expected results if the layout width changes due to the
 removal of previews or inclusion of mathematics during
@@ -206,7 +203,7 @@ style in a JavaScript object.</p>
 <dt>
 <tt class="descname">tooltip: { ... }</tt></dt>
 <dd><p>This sets the configuration options for <tt class="docutils literal"><span class="pre">&lt;maction&gt;</span></tt> elements
-with <tt class="docutils literal"><span class="pre">actiontype=&quot;tooltip&quot;</span></tt>.  (See also the <tt class="docutils literal"><span class="pre">#MathJax_Tooltip</span></tt>
+with <tt class="docutils literal"><span class="pre">actiontype="tooltip"</span></tt>.  (See also the <tt class="docutils literal"><span class="pre">#MathJax_Tooltip</span></tt>
 style setting in <tt class="docutils literal"><span class="pre">jax/output/SVG/config.js</span></tt>, which can be
 overridden using the <tt class="docutils literal"><span class="pre">styles</span></tt> option above.)</p>
 <p>The <tt class="docutils literal"><span class="pre">tooltip</span></tt> section can contain the following options:</p>
@@ -244,18 +241,16 @@ where the tooltip will be placed.</p>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="NativeMML.html"
-                        title="previous chapter">The NativeMML output processor</a></p>
+  <p class="topless"><a href="NativeMML.html" title="previous chapter">The NativeMML output processor</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="MMLorHTML.html"
-                        title="next chapter">The MMLorHTML configuration options</a></p>
+  <p class="topless"><a href="MMLorHTML.html" title="next chapter">The MMLorHTML configuration options</a></p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" size="18" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+    <form action="../search.html" class="search" method="get">
+      <input name="q" size="18" type="text"/>
+      <input type="submit" value="Go"/>
+      <input name="check_keywords" type="hidden" value="yes"/>
+      <input name="area" type="hidden" value="default"/>
     </form>
     <p class="searchtip" style="font-size: 90%">
     Enter search terms or a module, class or function name.
@@ -270,22 +265,19 @@ where the tooltip will be placed.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="MMLorHTML.html" title="The MMLorHTML configuration options"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="NativeMML.html" title="The NativeMML output processor"
-             >previous</a> |</li>
-        <li><a href="../index.html">MathJax v2.0 documentation</a> &raquo;</li>
-          <li><a href="index.html" >Configuration Objects</a> &raquo;</li> 
+          <a href="../genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="MMLorHTML.html" title="The MMLorHTML configuration options">next</a> |</li>
+        <li class="right">
+          <a href="NativeMML.html" title="The NativeMML output processor">previous</a> |</li>
+        <li><a href="../index.html">MathJax v2.0 documentation</a> »</li>
+          <li><a href="index.html">Configuration Objects</a> »</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2012 Design Science.
+        © Copyright 2012 Design Science.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
     
-  </body>
-</html>
+  
+</body></html>
